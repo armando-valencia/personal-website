@@ -1,12 +1,5 @@
 import React, { useState } from "react";
-import {
-	AiOutlineMenu,
-	AiOutlineHome,
-	AiOutlineProject,
-	AiOutlinePhone,
-} from "react-icons/ai";
-import { BsPerson } from "react-icons/bs";
-import { NavLink } from "react-router-dom";
+import { AiOutlineMenu } from "react-icons/ai";
 import NavItem from "./NavItem";
 
 const Sidenav = () => {
@@ -27,38 +20,20 @@ const Sidenav = () => {
 			/>
 
 			{nav ? (
-				<div className="fixed w-full h-screen bg-black/30 flex flex-col justify-center items-center z-20">
-					{/* TODO: make NavItem reusable component*/}
-
+				<nav className="fixed w-full h-screen bg-black/30 flex flex-col justify-center items-center z-20">
 					{pages.map((page) => (
-						<NavItem page={page} key={page} />
+						<NavItem
+							page={page}
+							key={page}
+							isActive={({ isActive }) => {
+								return isActive
+									? "nav-link__active"
+									: "nav-link";
+							}}
+							handleNav={handleNav}
+						/>
 					))}
-
-					{/*<NavLink
-						to="/"
-						className={({ isActive }) =>
-							isActive ? "nav-link__active" : "nav-link"
-						}
-					>
-						<AiOutlineHome size={20} />
-						<span className="pl-2">Home</span>
-					</NavLink>
-					<NavLink
-						to="/about"
-						className="w-[75%] flex justify-center items=center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200"
-					>
-						<BsPerson size={20} />
-						<span className="pl-2">About</span>
-					</NavLink>
-					<NavLink
-						to="/contact"
-						className="w-[75%] flex justify-center items=center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200"
-					>
-						<AiOutlinePhone size={20} />
-						<span className="pl-2">Contact</span>
-					</NavLink>
-					*/}
-				</div>
+				</nav>
 			) : (
 				""
 			)}

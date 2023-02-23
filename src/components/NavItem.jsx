@@ -1,14 +1,9 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import {
-	AiOutlineMenu,
-	AiOutlineHome,
-	AiOutlineProject,
-	AiOutlinePhone,
-} from "react-icons/ai";
+import { AiOutlineHome, AiOutlinePhone } from "react-icons/ai";
 import { BsPerson } from "react-icons/bs";
 
-const NavItem = ({ page }) => {
+const NavItem = ({ page, isActive, handleNav }) => {
 	const navIcon = (page) => {
 		switch (page) {
 			case "Home":
@@ -21,17 +16,14 @@ const NavItem = ({ page }) => {
 	};
 
 	return (
-		<div>
-			<NavLink
-				to={`/${page == "Home" ? "" : page.toLowerCase()}`}
-				className={({ isActive }) =>
-					isActive ? "nav-link__active" : "nav-link"
-				}
-			>
-				{navIcon(page)}
-				<span className="pl-2">{page}</span>
-			</NavLink>
-		</div>
+		<NavLink
+			to={`/${page == "Home" ? "" : page.toLowerCase()}`}
+			className={isActive}
+			onClick={handleNav}
+		>
+			{navIcon(page)}
+			<span className="pl-2">{page}</span>
+		</NavLink>
 	);
 };
 
