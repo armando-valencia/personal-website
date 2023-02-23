@@ -1,5 +1,4 @@
 import { Route, Routes } from "react-router-dom";
-import Sidenav from "./components/Sidenav";
 import Nav from "./components/Nav";
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -9,7 +8,6 @@ import Main from "./components/Main";
 function App() {
 	return (
 		<div>
-			<Sidenav />
 			<Nav />
 
 			<Routes>
