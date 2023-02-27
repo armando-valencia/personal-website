@@ -12,11 +12,11 @@
 }
 
 .nav-link {
-	@apply cursor-pointer hover:text-secondary text-tertiary bg-primary px-3 py-2;
+	@apply cursor-pointer hover:text-secondary text-tertiary bg-transparent px-3 py-2;
 }
 
 .nav-link__active {
-	@apply cursor-pointer hover:bg-primary text-secondary bg-primary px-3 py-2;
+	@apply cursor-pointer hover:bg-primary text-secondary bg-transparent px-3 py-2;
 }
 
 @layer base {
