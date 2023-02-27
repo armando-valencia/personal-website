@@ -1,35 +1,44 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
-import { AiOutlineMenu } from "react-icons/ai";
+import { FiAlignRight, FiX } from "react-icons/fi";
+import MobileNavItem from "./MobileNavItem";
 import NavItem from "./NavItem";
 
 const Nav = () => {
 	const [nav, setNav] = useState(false);
 
-	// flip navigation state
+	// flip navigation state on mobile vieww
 	const handleNav = () => {
 		setNav(!nav);
 	};
 
-	const pages = ["Home", "About", "Contact"];
+	const pages = ["home", "experience", "about", "contact"];
 
 	return (
-		<div>
-			<AiOutlineMenu
-				onClick={handleNav}
-				className="absolute top-4 right-4 z-[99] sm:hidden cursor-pointer"
-			/>
+		<div className="text-secondary flex p-3">
+			{nav === true ? (
+				<FiX
+					onClick={handleNav}
+					className="absolute top-4 right-4 z-[99] sm:hidden cursor-pointer"
+					size={30}
+				/>
+			) : (
+				<FiAlignRight
+					onClick={handleNav}
+					className="absolute top-4 right-4 z-[99] sm:hidden cursor-pointer"
+					size={30}
+				/>
+			)}
 
 			{nav && (
-				<nav className="fixed w-full h-screen bg-black/30 flex flex-col justify-center items-center z-20">
+				<nav className="fixed w-full h-screen bg-black/50 flex flex-col justify-center items-center z-20">
 					{pages.map((page) => (
-						<NavItem
+						<MobileNavItem
 							page={page}
 							key={page}
 							isActive={({ isActive }) => {
 								return isActive
-									? "nav-link__active"
-									: "nav-link";
+									? "mobile_nav-link__active"
+									: "mobile_nav-link";
 							}}
 							handleNav={handleNav}
 						/>
@@ -37,19 +46,24 @@ const Nav = () => {
 				</nav>
 			)}
 
-			<nav className="flex bg-black/80 p-2 items-center text-white justify-start space-x-1 max-sm:hidden">
-				<ul className="pl-3">
-					<NavLink className="pl-3" to="/" end>
-						Home
-					</NavLink>
-					<NavLink className="pl-3" to="/about" end>
-						About
-					</NavLink>
-					<NavLink className="pl-3" to="/contact" end>
-						Contact
-					</NavLink>
-				</ul>
-			</nav>
+			<div className="flex">
+				<img src="\Logo.png" alt="" className="h-9 " />
+				<nav className="flex bg-transparent items-center justify-end align-end space-x-1 max-sm:hidden">
+					<ul className="pl-3">
+						{pages.map((page) => (
+							<NavItem
+								page={page}
+								key={page}
+								isActive={({ isActive }) => {
+									return isActive
+										? "nav-link__active"
+										: "nav-link";
+								}}
+							/>
+						))}
+					</ul>
+				</nav>
+			</div>
 		</div>
 	);
 };
