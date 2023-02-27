@@ -9,6 +9,9 @@ module.exports = {
 				tertiary: "#ccd6f6",
 			},
 		},
+		fontFamily: {
+			sans: ["Roboto Condensed", "sans-serif"],
+		},
 	},
 	plugins: [],
 };
