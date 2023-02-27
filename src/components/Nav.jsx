@@ -11,7 +11,7 @@ const Nav = () => {
 		setNav(!nav);
 	};
 
-	const pages = ["home", "experience", "about", "contact"];
+	const pages = ["Home", "Experience", "About", "Contact"];
 
 	return (
 		<div className="text-secondary flex p-3">

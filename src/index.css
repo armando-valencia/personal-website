@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;1,300;1,400&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -11,9 +12,15 @@
 }
 
 .nav-link {
-	@apply cursor-pointer hover:bg-primary text-tertiary bg-primary px-3 py-2;
+	@apply cursor-pointer hover:text-secondary text-tertiary bg-primary px-3 py-2;
 }
 
 .nav-link__active {
 	@apply cursor-pointer hover:bg-primary text-secondary bg-primary px-3 py-2;
+}
+
+@layer base {
+	html {
+		font-family: Roboto Condensed, system-ui, sans-serif;
+	}
 }

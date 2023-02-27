@@ -8,7 +8,7 @@ const NavItem = ({ page, isActive }) => {
 			className={isActive}
 			end
 		>
-			&gt; {page}
+			&gt;&gt; {page}
 		</NavLink>
 	);
 };
