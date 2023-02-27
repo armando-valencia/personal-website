@@ -14,7 +14,7 @@ const Nav = () => {
 	const pages = ["Home", "Experience", "About", "Contact"];
 
 	return (
-		<div className="text-secondary flex p-3">
+		<div className="text-secondary p-3">
 			{nav === true ? (
 				<FiX
 					onClick={handleNav}
@@ -46,23 +46,27 @@ const Nav = () => {
 				</nav>
 			)}
 
-			<div className="flex">
-				<img src="\Logo.png" alt="" className="h-9 " />
-				<nav className="flex bg-transparent items-center justify-end align-end space-x-1 max-sm:hidden">
-					<ul className="pl-3">
-						{pages.map((page) => (
-							<NavItem
-								page={page}
-								key={page}
-								isActive={({ isActive }) => {
-									return isActive
-										? "nav-link__active"
-										: "nav-link";
-								}}
-							/>
-						))}
-					</ul>
-				</nav>
+			<div className="flex justify-between items-center px-8">
+				<div>
+					<img src="\Logo.png" alt="" className="h-9" />
+				</div>
+				<div>
+					<nav className="flex bg-transparent max-sm:hidden">
+						<ul className="pl-3">
+							{pages.map((page) => (
+								<NavItem
+									page={page}
+									key={page}
+									isActive={({ isActive }) => {
+										return isActive
+											? "nav-link__active"
+											: "nav-link";
+									}}
+								/>
+							))}
+						</ul>
+					</nav>
+				</div>
 			</div>
 		</div>
 	);
