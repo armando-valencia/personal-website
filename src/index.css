@@ -19,8 +19,24 @@
 	@apply cursor-pointer hover:bg-primary text-secondary bg-transparent px-3 py-2;
 }
 
-.tab-panel__h1 {
-	@apply text-secondary font-semibold;
+.tab-panel__title {
+	@apply text-secondary font-semibold text-xl;
+}
+
+.tab-panel__dates {
+	@apply text-gray-400 text-xs font-light italic;
+}
+
+.tab-panel__desc {
+	@apply text-tertiary text-xs list-disc py-1;
+}
+
+.tab-panel__skills {
+	@apply text-secondary text-xs;
+}
+
+.tab-panel__skills-mobile {
+	@apply flex justify-center text-secondary text-xs;
 }
 
 @layer base {
