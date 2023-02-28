@@ -1,8 +1,3 @@
-const Home = () => (
-	<div className="text-secondary">
-		<h1>Armando</h1>
-		<p>hi</p>
-	</div>
-);
+const Home = () => <div className=""></div>;
 
 export default Home;

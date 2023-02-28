@@ -11,10 +11,10 @@ const Nav = () => {
 		setNav(!nav);
 	};
 
-	const pages = ["Home", "Experience", "About", "Contact"];
+	const pages = ["Home", "About", "Experience", "Contact"];
 
 	return (
-		<div className="text-secondary p-3">
+		<div className="">
 			{nav === true ? (
 				<FiX
 					onClick={handleNav}
@@ -46,10 +46,10 @@ const Nav = () => {
 				</nav>
 			)}
 
-			<div className="flex justify-between items-center px-8">
-				<div>
+			<div className="flex justify-end items-center px-8 py-4">
+				{/*<div>
 					<img src="\Logo.png" alt="" className="h-9" />
-				</div>
+						</div>*/}
 				<div>
 					<nav className="flex bg-transparent max-sm:hidden">
 						<ul className="pl-3">

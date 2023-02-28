@@ -19,6 +19,10 @@
 	@apply cursor-pointer hover:bg-primary text-secondary bg-transparent px-3 py-2;
 }
 
+.tab-panel__h1 {
+	@apply text-secondary font-semibold;
+}
+
 @layer base {
 	html {
 		font-family: Roboto Condensed, system-ui, sans-serif;

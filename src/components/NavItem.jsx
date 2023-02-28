@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 const NavItem = ({ page, isActive }) => {
 	return (
 		<NavLink
-			to={`/${page == "home" ? "" : page.toLowerCase()}`}
+			to={`/${page == "Home" ? "" : page.toLowerCase()}`}
 			className={isActive}
 			end
 		>
