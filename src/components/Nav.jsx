@@ -46,12 +46,12 @@ const Nav = () => {
 				</nav>
 			)}
 
-			<div className="flex justify-end items-center px-8 py-4">
+			<div className="flex justify-end items-center px-2 md:px-8 py-4">
 				{/*<div>
 					<img src="\Logo.png" alt="" className="h-9" />
 						</div>*/}
 				<div>
-					<nav className="flex bg-transparent max-sm:hidden">
+					<nav className="flex bg-transparent sm:block hidden">
 						<ul className="pl-3">
 							{pages.map((page) => (
 								<NavItem
