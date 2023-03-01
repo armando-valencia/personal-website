@@ -6,18 +6,18 @@ import { BsPerson } from "react-icons/bs";
 const MobileNavItem = ({ page, isActive, handleNav }) => {
 	const navIcon = (page) => {
 		switch (page) {
-			case "home":
+			case "Home":
 				return <AiOutlineHome size={20} />;
-			case "about":
+			case "About":
 				return <BsPerson size={20} />;
-			case "contact":
+			case "Contact":
 				return <AiOutlinePhone size={20} />;
 		}
 	};
 
 	return (
 		<NavLink
-			to={`/${page == "home" ? "" : page.toLowerCase()}`}
+			to={`/${page == "Home" ? "" : page.toLowerCase()}`}
 			className={isActive}
 			onClick={handleNav}
 			end

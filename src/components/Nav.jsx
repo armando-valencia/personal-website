@@ -30,7 +30,7 @@ const Nav = () => {
 			)}
 
 			{nav && (
-				<nav className="fixed w-full h-screen bg-black/50 flex flex-col justify-center items-center z-20">
+				<nav className="fixed w-full h-screen bg-black/80 flex flex-col justify-center items-center z-20">
 					{pages.map((page) => (
 						<MobileNavItem
 							page={page}
@@ -46,9 +46,9 @@ const Nav = () => {
 				</nav>
 			)}
 
-			<div className="flex justify-end items-center px-2 md:px-8 py-4">
+			<div className="flex justify-between items-center px-2 md:px-8 py-4">
 				{/*<div>
-					<img src="\Logo.png" alt="" className="h-9" />
+					<img src="\Logo.png" alt="" className="h-8" />
 						</div>*/}
 				<div>
 					<nav className="flex bg-transparent sm:block hidden">
