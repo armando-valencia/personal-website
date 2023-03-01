@@ -4,11 +4,11 @@
 @tailwind utilities;
 
 .mobile_nav-link {
-	@apply w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200 text-secondary bg-primary;
+	@apply w-[75%] flex justify-center items-center rounded-full shadow-md bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200 text-secondary bg-primary;
 }
 
 .mobile_nav-link__active {
-	@apply w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200 text-primary bg-secondary;
+	@apply w-[75%] flex justify-center items-center rounded-full shadow-md bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200 text-primary bg-secondary;
 }
 
 .nav-link {
@@ -20,23 +20,23 @@
 }
 
 .tab-panel__title {
-	@apply text-secondary font-semibold text-xl;
+	@apply text-secondary font-semibold text-2xl;
 }
 
 .tab-panel__dates {
-	@apply text-gray-400 text-xs font-light italic;
+	@apply text-gray-400 text-sm font-light italic;
 }
 
 .tab-panel__desc {
-	@apply text-tertiary text-xs list-disc py-1;
+	@apply text-tertiary text-sm list-disc py-1;
 }
 
 .tab-panel__skills {
-	@apply text-secondary text-xs;
+	@apply text-secondary text-sm;
 }
 
 .tab-panel__skills-mobile {
-	@apply flex justify-center text-secondary text-xs;
+	@apply flex justify-center text-secondary pt-2;
 }
 
 @layer base {

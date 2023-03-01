@@ -8,9 +8,9 @@ module.exports = {
 				secondary: "#63fdd8",
 				tertiary: "#ccd6f6",
 			},
-		},
-		fontFamily: {
-			sans: ["Roboto Condensed", "sans-serif"],
+			fontFamily: {
+				robo: ["Roboto Condensed", "sans-serif"],
+			},
 		},
 	},
 	plugins: [],

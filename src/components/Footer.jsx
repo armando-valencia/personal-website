@@ -8,10 +8,10 @@ const Footer = () => {
 	return (
 		<div className="flex justify-center p-6 mt-8 gap-2 border-t border-secondary">
 			<a href={githubUrl} target="_blank">
-				<GrGithub />
+				<GrGithub size={30} />
 			</a>
 			<a href={linkedinUrl} target="_blank">
-				<GrLinkedin />
+				<GrLinkedin size={30} />
 			</a>
 		</div>
 	);
