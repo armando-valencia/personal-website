@@ -6,7 +6,7 @@ const Footer = () => {
 	const linkedinUrl = "https://www.linkedin.com/in/armandovalencia1/";
 
 	return (
-		<div className="flex justify-center p-6 mt-8 gap-2 border-t border-secondary">
+		<div className="flex justify-center px-6 py-10 mt-8 gap-2 border-t border-secondary">
 			<a href={githubUrl} target="_blank">
 				<GrGithub size={30} />
 			</a>

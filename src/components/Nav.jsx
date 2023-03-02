@@ -14,7 +14,7 @@ const Nav = () => {
 	const pages = ["Home", "About", "Experience", "Contact"];
 
 	return (
-		<div className="">
+		<div className="sticky top-0 z-50">
 			{nav === true ? (
 				<FiX
 					onClick={handleNav}
@@ -31,6 +31,7 @@ const Nav = () => {
 
 			{nav && (
 				<nav className="fixed w-full h-screen bg-black/80 flex flex-col justify-center items-center z-20">
+					{/*}
 					{pages.map((page) => (
 						<MobileNavItem
 							page={page}
@@ -42,17 +43,27 @@ const Nav = () => {
 							}}
 							handleNav={handleNav}
 						/>
+						))}*/}
+
+					{pages.map((page) => (
+						<a
+							href={`#${page.toLowerCase()}`}
+							className="mobile_nav-link"
+						>
+							{page}
+						</a>
 					))}
 				</nav>
 			)}
 
-			<div className="flex justify-end items-center px-2 md:px-8 py-4">
+			<div className="flex justify-end items-center px-2 md:px-8 py-4 sticky">
 				{/*<div>
 					<img src="\Logo.png" alt="" className="h-8" />
 						</div>*/}
 				<div>
 					<nav className="flex bg-transparent sm:block hidden">
 						<ul className="pl-3">
+							{/*}
 							{pages.map((page) => (
 								<NavItem
 									page={page}
@@ -63,6 +74,15 @@ const Nav = () => {
 											: "nav-link";
 									}}
 								/>
+							))}
+								*/}
+							{pages.map((page) => (
+								<a
+									href={`#${page.toLowerCase()}`}
+									className="nav-link"
+								>
+									{page}
+								</a>
 							))}
 						</ul>
 					</nav>
