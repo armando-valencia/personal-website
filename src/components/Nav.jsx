@@ -46,7 +46,7 @@ const Nav = () => {
 				</nav>
 			)}
 
-			<div className="flex justify-between items-center px-2 md:px-8 py-4">
+			<div className="flex justify-end items-center px-2 md:px-8 py-4">
 				{/*<div>
 					<img src="\Logo.png" alt="" className="h-8" />
 						</div>*/}
