@@ -12,7 +12,7 @@ const Experience = () => {
 			desc: [
 				"Implemented API integration to log inbound calls to a PostgreSQL database via REST API",
 			],
-			skills: "JavaScript, React, Rust, Python, PostgreSQL, Git",
+			skills: "JavaScript, React, Rust, Python, PostgreSQL, Git, Node.js",
 		},
 		{
 			company: "Walmart Global",
@@ -73,7 +73,7 @@ const Experience = () => {
 				<Tabs
 					isFitted
 					isLazy
-					size="md"
+					size="lg"
 					className="text-gray-500 border-l-gray-500 flex align-center"
 					orientation="vertical"
 				>
