@@ -69,9 +69,6 @@ const Experience = () => {
 
 	return (
 		<div className="pt-6 justify-center">
-			<div className="flex justify-center m-3">
-				<h1 className="text-3xl">02. Experience</h1>
-			</div>
 			<div className="flex justify-center sm:block hidden">
 				<Tabs
 					isFitted
