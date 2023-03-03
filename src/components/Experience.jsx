@@ -42,29 +42,29 @@ const Experience = () => {
 	];
 
 	const mobileSelectedStyles = {
-		color: "#63fdd8",
+		color: "#FFD369",
 		borderBottom: "3px solid",
-		borderBottomColor: "#63fdd8",
+		borderBottomColor: "#FFD369",
 	};
 
 	const mobileHoverStyles = {
-		color: "#63fdd8",
+		color: "#FFD369",
 		borderBottom: "2px solid",
-		borderBottomColor: "#63fdd8",
-		bg: "#163563",
+		borderBottomColor: "#FFD369",
+		bg: "#393E46",
 	};
 
 	const desktopSelectedStyles = {
-		color: "#63fdd8",
+		color: "#FFD369",
 		borderLeft: "3px solid",
-		borderLeftColor: "#63fdd8",
+		borderLeftColor: "#FFD369",
 	};
 
 	const desktopHoverStyles = {
-		color: "#63fdd8",
+		color: "#FFD369",
 		borderLeft: "2px solid",
-		borderLeftColor: "#63fdd8",
-		bg: "#163563",
+		borderLeftColor: "#FFD369",
+		bg: "#393E46",
 	};
 
 	return (

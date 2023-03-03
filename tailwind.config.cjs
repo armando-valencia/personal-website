@@ -4,9 +4,9 @@ module.exports = {
 	theme: {
 		extend: {
 			colors: {
-				primary: "#0a192f",
-				secondary: "#63fdd8",
-				tertiary: "#ccd6f6",
+				primary: "#222831",
+				secondary: "#FFD369",
+				tertiary: "#EEEEEE",
 			},
 			fontFamily: {
 				robo: ["Roboto Condensed", "sans-serif"],
