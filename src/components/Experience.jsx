@@ -10,7 +10,7 @@ const Experience = () => {
 			title: "Software Engineer",
 			dates: "Aug 2021 - Dec 2022",
 			desc: [
-				"Implemented API integration to log inbound calls to a PostgreSQL database via REST API",
+				"Implemented API integration to log inbound phone calls to a PostgreSQL database via REST API",
 			],
 			skills: "JavaScript, React, Rust, Python, PostgreSQL, Git, Node.js",
 		},
@@ -20,8 +20,8 @@ const Experience = () => {
 			dates: "Jan 2021 - May 2021",
 			desc: [
 				"Developed UI of landing page for a React web-app",
-				"Migrated a multi-page user experience into a single page to enhance user engagementp",
-				"Strong contributor in entire development cycle, from concept & design to development phases",
+				"Migrated a multi-page user experience into a single page to enhance user experience",
+				"Lead contributor in development cycle, from concept & design to development phases",
 				"Utilized GitHub as version control software to track and update code",
 				"Documented codebase for future teams to refer back to",
 			],
@@ -68,11 +68,11 @@ const Experience = () => {
 	};
 
 	return (
-		<div className="pt-6 justify-center">
-			<div className="flex justify-center m-3">
+		<div className="md:pt-6 justify-center">
+			<div className="flex m-3">
 				<h1 className="text-3xl">02. Experience</h1>
 			</div>
-			<div className="flex justify-center sm:block hidden">
+			<div className="justify-center sm:block hidden">
 				<Tabs
 					isFitted
 					isLazy
