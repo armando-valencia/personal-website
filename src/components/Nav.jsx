@@ -6,7 +6,6 @@ import NavItem from "./NavItem";
 const Nav = () => {
 	const [nav, setNav] = useState(false);
 
-	// flip navigation state on mobile vieww
 	const handleNav = () => {
 		setNav(!nav);
 	};
@@ -45,10 +44,12 @@ const Nav = () => {
 						/>
 						))}*/}
 
-					{pages.map((page) => (
+					{pages.map((page, idx) => (
 						<a
 							href={`#${page.toLowerCase()}`}
 							className="mobile_nav-link"
+							key={idx}
+							onClick={handleNav}
 						>
 							{page}
 						</a>
@@ -61,7 +62,7 @@ const Nav = () => {
 					<img src="\Logo.png" alt="" className="h-8" />
 						</div>*/}
 				<div>
-					<nav className="flex bg-transparent sm:block hidden">
+					<nav className="bg-transparent sm:block hidden">
 						<ul className="pl-3">
 							{/*}
 							{pages.map((page) => (
@@ -76,10 +77,11 @@ const Nav = () => {
 								/>
 							))}
 								*/}
-							{pages.map((page) => (
+							{pages.map((page, idx) => (
 								<a
 									href={`#${page.toLowerCase()}`}
 									className="nav-link"
+									key={idx}
 								>
 									{page}
 								</a>
