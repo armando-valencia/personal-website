@@ -1,37 +1,43 @@
 import React from "react";
-import Skills from "./Skills";
 
 const About = () => {
 	return (
-		<div>
-			<div className="flex m-3">
+		<div className="pb-6 md:pb-10">
+			<div className="flex mt-20 mx-2 mb-2 md:m-2">
 				<h1 className="text-3xl">01. About</h1>
 			</div>
 			<div className="block">
-				<div className="flex justify-center">
-					<img
-						src="\picture.jpg"
-						alt=""
-						className="rounded-full h-60 p-3"
-					/>
+				<div className="text-tertiary">
+					<p className="px-4 pt-6 pb-4">
+						After my first semester of programming classes in
+						college, I did not think software development was for
+						me. However, due to my indesicive nature, I stuck with
+						it for another couple of semesters.
+					</p>
+					<p className="p-4">
+						In 2021, I graduated with my Bachelor's in Management
+						Information Systems and a new, driven curiosity for
+						creating scalable software solutions.
+					</p>
+					<p className="p-4">
+						Now, I find myself extremely eager when presented a new
+						opportunity to implement solutions -- especially modern
+						frontend designs.
+					</p>
 				</div>
-				<div className="text-tertiary p-2">
-					Hey! My name is{" "}
-					<span className="text-secondary">Armando Valencia</span> and
-					I'm a software engineer based out of Birmingham, Alabama.
-					I'm 23 years old and a graduate of the University of
-					Alabama, with a Bachelor's degree in Management Information
-					Systems.
-					<br />
-					<br />
+				<div className="flex justify-center mt-4 p-2">
+					Tools and languages I have experience with consist of:
 				</div>
-				<div className="flex justify-center">
-					Below are tools and languages I have experience with:
-				</div>
-				<Skills />
-				<div className="text-tertiary p-2">
-					<br />
-					<br />
+				<div className="grid grid-cols-3 gap-1 justify-items-center list-none text-tertiary">
+					<li>React</li>
+					<li>JavaScript</li>
+					<li>Node.js</li>
+					<li>Python</li>
+					<li>Rust</li>
+					<li>Tailwind</li>
+					<li>Git</li>
+					<li>MongoDB</li>
+					<li>SQL</li>
 				</div>
 			</div>
 		</div>
