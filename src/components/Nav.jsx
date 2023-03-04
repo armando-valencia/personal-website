@@ -57,6 +57,10 @@ const Nav = () => {
 				</nav>
 			)}
 
+			{/* TODO: make the navbar position independent from the rest of the screen. 
+				When adding vertical padding to the navbar, this should not push other 
+				contents of the webpage lower down the screen
+			*/}
 			<div className="flex justify-end items-center px-2 md:px-8 py-4 sticky">
 				{/*<div>
 					<img src="\Logo.png" alt="" className="h-8" />

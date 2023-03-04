@@ -10,7 +10,7 @@ const Experience = () => {
 			title: "Software Engineer",
 			dates: "Aug 2021 - Dec 2022",
 			desc: [
-				"Implemented API integration to log inbound phone calls to a PostgreSQL database via REST API",
+				"Implemented API integration to log inbound phone calls to a PostgreSQL database via webhooks and REST API",
 			],
 			skills: "JavaScript, React, Rust, Python, PostgreSQL, Git, Node.js",
 		},
@@ -68,11 +68,11 @@ const Experience = () => {
 	};
 
 	return (
-		<div className="md:pt-6 justify-center">
-			<div className="flex m-3">
+		<div className=" justify-center">
+			<div className="flex mt-20 mx-2 mb-2 md:m-2">
 				<h1 className="text-3xl">02. Experience</h1>
 			</div>
-			<div className="justify-center sm:block hidden">
+			<div className="justify-center sm:block hidden p-6 md:pb-10">
 				<Tabs
 					isFitted
 					isLazy
