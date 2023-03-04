@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => {
 	return (
-		<div className="pb-6 md:pb-10">
+		<div className="pb-6 md:pb-24">
 			<div className="flex mt-20 mx-2 mb-2 md:m-2">
 				<h1 className="text-3xl">01. About</h1>
 			</div>
@@ -22,10 +22,10 @@ const About = () => {
 					<p className="p-4">
 						Now, I find myself extremely eager when presented a new
 						opportunity to implement solutions -- especially modern
-						frontend designs.
+						frontend development.
 					</p>
 				</div>
-				<div className="flex justify-center mt-4 p-2">
+				<div className="flex justify-center mt-4 p-2 md:text-lg">
 					Tools and languages I have experience with consist of:
 				</div>
 				<div className="grid grid-cols-3 gap-1 justify-items-center list-none text-tertiary">
