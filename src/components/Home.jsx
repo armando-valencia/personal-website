@@ -7,7 +7,7 @@ const Home = () => {
 				<img
 					src="\picture.jpg"
 					alt=""
-					className="rounded-full h-60 px-3 pb-3  mb-4"
+					className="rounded-full h-60 px-3 pb-3 mb-4"
 				/>
 			</div>
 			<div className="">
