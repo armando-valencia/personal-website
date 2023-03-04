@@ -7,6 +7,7 @@ module.exports = {
 				primary: "#222831",
 				secondary: "#FFD369",
 				tertiary: "#EEEEEE",
+				quarternary: "#393E46",
 			},
 			fontFamily: {
 				robo: ["Roboto Condensed", "sans-serif"],
