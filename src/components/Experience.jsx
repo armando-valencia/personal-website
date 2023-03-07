@@ -68,7 +68,7 @@ const Experience = () => {
 	};
 
 	return (
-		<div className=" justify-center">
+		<div className="justify-center py-6 md:pb-24 md:pt-20">
 			<div className="flex mt-20 mx-2 mb-2 md:m-2">
 				<h1 className="text-3xl">02. Experience</h1>
 			</div>
