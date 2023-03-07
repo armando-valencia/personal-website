@@ -22,7 +22,7 @@ const Nav = () => {
 		<div className="sticky top-0 w-full z-50">
 			{nav === true ? (
 				<div className="p-3 bg-primary flex justify-between items-center z-[99] sm:hidden">
-					<a href="#" onClick={handleNav}>
+					<a href="#home" onClick={handleNav}>
 						<div className="flex items-center gap-3 uppercase">
 							<img
 								src="\Logo.png"
@@ -38,7 +38,7 @@ const Nav = () => {
 				</div>
 			) : (
 				<div className="p-3 bg-primary flex justify-between shadow-xl items-center z-[99] sm:hidden">
-					<a href="#">
+					<a href="#home">
 						<div className="flex items-center gap-3 uppercase">
 							<img
 								src="\Logo.png"
@@ -58,19 +58,14 @@ const Nav = () => {
 			{nav && (
 				<nav className="fixed w-full h-screen bg-black/80 flex flex-col justify-center items-center z-20">
 					{pages.map((page, idx) => (
-						<button
+						<a
+							href={`#${page.name.toLowerCase()}`}
 							className="mobile_nav-link"
-							key={idx}
 							onClick={handleNav}
+							key={idx}
 						>
-							{page.icon}
-							<a
-								href={`#${page.name.toLowerCase()}`}
-								className="pl-2"
-							>
-								{page.name}
-							</a>
-						</button>
+							{page.icon}&nbsp;{page.name}
+						</a>
 					))}
 				</nav>
 			)}
