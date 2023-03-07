@@ -4,7 +4,7 @@ import Experience from "../components/Experience";
 import Home from "../components/Home";
 
 const HomePage = () => (
-	<div className="px-6 md:grid grid-cols-3 gap-3">
+	<div id="#" className="px-6 md:grid grid-cols-3">
 		<div></div>
 		<div className="grid grid-cols-1">
 			<div id="home" className="h-screen flex items-center">

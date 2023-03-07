@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import { FiAlignRight, FiX } from "react-icons/fi";
+import { AiOutlineHome, AiOutlinePhone } from "react-icons/ai";
+import { BsPerson } from "react-icons/bs";
+import { BiBriefcase } from "react-icons/bi";
 
 const Nav = () => {
 	const [nav, setNav] = useState(false);
@@ -8,10 +11,14 @@ const Nav = () => {
 		setNav(!nav);
 	};
 
-	const pages = ["Home", "About", "Experience", "Contact"];
+	const pages = [
+		{ name: "Home", icon: <AiOutlineHome /> },
+		{ name: "About", icon: <BsPerson /> },
+		{ name: "Experience", icon: <BiBriefcase /> },
+		{ name: "Contact", icon: <AiOutlinePhone /> },
+	];
 
 	return (
-		//TODO: sticky nav bar messes with the h-screen class; specifically the padding
 		<div className="sticky top-0 w-full z-50">
 			{nav === true ? (
 				<div className="p-3 bg-quarternary flex justify-between items-center z-[99] sm:hidden">
@@ -50,37 +57,23 @@ const Nav = () => {
 
 			{nav && (
 				<nav className="fixed w-full h-screen bg-black/80 flex flex-col justify-center items-center z-20">
-					{/*}
-					{pages.map((page) => (
-						<MobileNavItem
-							page={page}
-							key={page}
-							isActive={({ isActive }) => {
-								return isActive
-									? "mobile_nav-link__active"
-									: "mobile_nav-link";
-							}}
-							handleNav={handleNav}
-						/>
-						))}*/}
-
 					{pages.map((page, idx) => (
-						<a
-							href={`#${page.toLowerCase()}`}
+						<button
 							className="mobile_nav-link"
 							key={idx}
 							onClick={handleNav}
 						>
-							{page}
-						</a>
+							{page.icon}
+							<a
+								href={`#${page.name.toLowerCase()}`}
+								className="pl-2"
+							>
+								{page.name}
+							</a>
+						</button>
 					))}
 				</nav>
 			)}
-
-			{/* TODO: make the navbar position independent from the rest of the screen. 
-				When adding vertical padding to the navbar, this should not push other 
-				contents of the webpage lower down the screen
-			*/}
 			<div className="sm:block hidden bg-quarternary text-lg">
 				<div className="flex justify-between items-center py-3 px-10">
 					<a href="#">
@@ -100,11 +93,11 @@ const Nav = () => {
 						<ul className="px-3 py-2">
 							{pages.map((page, idx) => (
 								<a
-									href={`#${page.toLowerCase()}`}
+									href={`#${page.name.toLowerCase()}`}
 									className="nav-link"
 									key={idx}
 								>
-									{page}
+									{page.name}
 								</a>
 							))}
 						</ul>
