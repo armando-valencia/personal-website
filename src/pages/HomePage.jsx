@@ -4,10 +4,10 @@ import Experience from "../components/Experience";
 import Home from "../components/Home";
 
 const HomePage = () => (
-	<div id="#" className="px-6 md:grid grid-cols-3">
-		<div></div>
-		<div className="grid grid-cols-1">
-			<div id="home" className="h-screen flex items-center">
+	<div className="flex items-center justify-center">
+		<div className="flex-none w-8 md:w-14"></div>
+		<div className="grow max-w-5xl">
+			<div id="home" className="h-screen flex items-center text-center">
 				<Home />
 			</div>
 			<div id="about" className="pt-3">
@@ -20,7 +20,7 @@ const HomePage = () => (
 				<Contact />
 			</div>
 		</div>
-		<div></div>
+		<div className="flex-none w-14"></div>
 	</div>
 );
 
