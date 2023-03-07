@@ -39,6 +39,7 @@ const Contact = () => {
 							value={name}
 							onChange={(e) => setName(e.target.value)}
 							required
+							placeholder="Name"
 						/>
 					</div>
 					<div className="flex flex-col">
@@ -50,6 +51,7 @@ const Contact = () => {
 							value={email}
 							onChange={(e) => setEmail(e.target.value)}
 							required
+							placeholder="Email"
 						/>
 					</div>
 				</div>
@@ -63,6 +65,7 @@ const Contact = () => {
 						value={subject}
 						onChange={(e) => setSubject(e.target.value)}
 						required
+						placeholder="Subject"
 					/>
 				</div>
 				<div className="flex flex-col py-2">
@@ -74,6 +77,7 @@ const Contact = () => {
 						value={message}
 						onChange={(e) => setMessage(e.target.value)}
 						required
+						placeholder="Message"
 					></textarea>
 				</div>
 				<div className="flex justify-center">
