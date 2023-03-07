@@ -10,7 +10,11 @@ const Experience = () => {
 			title: "Software Engineer",
 			dates: "Aug 2021 - Dec 2022",
 			desc: [
-				"Implemented API integration to log inbound phone calls to a PostgreSQL database via webhooks and REST API",
+				"Implemented API integration to log inbound phone calls to a PostgreSQL database using JavaScript and Rust",
+				"Built over 20 React components with Material UI to serve customer-facing teams",
+				"Streamlined employee offboarding process through Node scripts, reducing costs by around $15k per month ",
+				"Run Python scripts to pull data for reporting and QA & manage user configurations",
+				"Built functionality for our cloud-based contact center by utilizing JavaScript and React on top of Twilio’s APIs ",
 			],
 			skills: "JavaScript, React, Rust, Python, PostgreSQL, Git, Node.js",
 		},
@@ -72,12 +76,12 @@ const Experience = () => {
 			<div className="flex mt-20 mx-2 mb-2 md:m-2">
 				<h1 className="text-3xl">02. Experience</h1>
 			</div>
-			<div className="justify-center sm:block hidden p-6 md:pb-24">
+			<div className="justify-center md:block hidden p-3 md:pb-24">
 				<Tabs
 					isFitted
 					isLazy
 					size="lg"
-					className="text-gray-500 border-l-gray-500 flex align-center"
+					className="text-gray-500 border-l-gray-500 flex align-center h-full"
 					orientation="vertical"
 				>
 					<TabList>
@@ -110,7 +114,7 @@ const Experience = () => {
 					isFitted
 					isLazy
 					size="md"
-					className="text-gray-500 border-b-gray-500 flex"
+					className="text-gray-500 border-b-gray-500 w-full"
 					orientation="horizontal"
 				>
 					<TabList>

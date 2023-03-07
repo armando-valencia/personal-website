@@ -17,75 +17,83 @@ const Contact = () => {
 
 	return (
 		<div>
-			<div className="flex mt-20 mx-2 mb-2 md:m-2">
+			<div className="mt-20 mx-2 mb-2 md:m-2 text-left">
 				<h1 className="text-3xl">03. Contact</h1>
 			</div>
-			<form
-				action={import.meta.env.VITE_CONTACT_FORM}
-				method="POST"
-				encType="multipart/form-data"
-				className="pb-14"
-				onSubmit={handleSubmitForm}
-			>
-				<div className="grid md:grid-cols-2 gap-4 w-full py-4">
-					<div className="flex flex-col">
-						<label className="uppercase text-sm py-2 required">
-							Name
+			<div className="md:flex flex-col justify-center items-center">
+				<form
+					action={import.meta.env.VITE_CONTACT_FORM}
+					method="POST"
+					encType="multipart/form-data"
+					className="pb-14 md:w-3/4 max-w-3xl"
+					onSubmit={handleSubmitForm}
+				>
+					<div className="grid md:grid-cols-2 gap-4 w-full py-4">
+						<div className="flex flex-col">
+							<label className="uppercase text-sm py-2 required">
+								Name
+							</label>
+							<input
+								className="input-field_contact-form"
+								type="text"
+								name="name"
+								value={name}
+								onChange={(e) => setName(e.target.value)}
+								required
+								placeholder="Name"
+							/>
+						</div>
+						<div className="flex flex-col">
+							<label className="uppercase text-sm py-2">
+								Email
+							</label>
+							<input
+								className="input-field_contact-form"
+								type="email"
+								name="email"
+								value={email}
+								onChange={(e) => setEmail(e.target.value)}
+								required
+								placeholder="Email"
+							/>
+						</div>
+					</div>
+
+					<div className="flex flex-col py-2">
+						<label className="uppercase text-sm py-2">
+							Subject
 						</label>
 						<input
 							className="input-field_contact-form"
 							type="text"
-							name="name"
-							value={name}
-							onChange={(e) => setName(e.target.value)}
+							name="subject"
+							value={subject}
+							onChange={(e) => setSubject(e.target.value)}
 							required
-							placeholder="Name"
+							placeholder="Subject"
 						/>
 					</div>
-					<div className="flex flex-col">
-						<label className="uppercase text-sm py-2">Email</label>
-						<input
+					<div className="flex flex-col py-2">
+						<label className="uppercase text-sm py-2">
+							Message
+						</label>
+						<textarea
 							className="input-field_contact-form"
-							type="email"
-							name="email"
-							value={email}
-							onChange={(e) => setEmail(e.target.value)}
+							rows="5"
+							name="message"
+							value={message}
+							onChange={(e) => setMessage(e.target.value)}
 							required
-							placeholder="Email"
-						/>
+							placeholder="Message"
+						></textarea>
 					</div>
-				</div>
-
-				<div className="flex flex-col py-2">
-					<label className="uppercase text-sm py-2">Subject</label>
-					<input
-						className="input-field_contact-form"
-						type="text"
-						name="subject"
-						value={subject}
-						onChange={(e) => setSubject(e.target.value)}
-						required
-						placeholder="Subject"
-					/>
-				</div>
-				<div className="flex flex-col py-2">
-					<label className="uppercase text-sm py-2">Message</label>
-					<textarea
-						className="input-field_contact-form"
-						rows="5"
-						name="message"
-						value={message}
-						onChange={(e) => setMessage(e.target.value)}
-						required
-						placeholder="Message"
-					></textarea>
-				</div>
-				<div className="flex justify-center">
-					<button className="bg-secondary text-primary mt-4 w-1/2 md:w-1/3 p-3 rounded-full">
-						Submit
-					</button>
-				</div>
-			</form>
+					<div className="flex justify-center">
+						<button className="bg-secondary text-primary hover:text-tertiary hover:bg-[#d4a83f] mt-4 w-1/2 md:w-1/3 p-3 rounded-full">
+							Submit
+						</button>
+					</div>
+				</form>
+			</div>
 		</div>
 	);
 };

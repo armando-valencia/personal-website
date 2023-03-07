@@ -21,11 +21,11 @@ const Nav = () => {
 	return (
 		<div className="sticky top-0 w-full z-50">
 			{nav === true ? (
-				<div className="p-3 bg-quarternary flex justify-between items-center z-[99] sm:hidden">
+				<div className="p-3 bg-primary flex justify-between items-center z-[99] sm:hidden">
 					<a href="#" onClick={handleNav}>
 						<div className="flex items-center gap-3 uppercase">
 							<img
-								src="\picture_2.jpg"
+								src="\Logo.png"
 								alt=""
 								className="rounded-full h-12"
 							/>
@@ -37,11 +37,11 @@ const Nav = () => {
 					<FiX onClick={handleNav} size={40} />
 				</div>
 			) : (
-				<div className="p-3 bg-quarternary flex justify-between items-center z-[99] sm:hidden">
+				<div className="p-3 bg-primary flex justify-between shadow-xl items-center z-[99] sm:hidden">
 					<a href="#">
 						<div className="flex items-center gap-3 uppercase">
 							<img
-								src="\picture_2.jpg"
+								src="\Logo.png"
 								alt=""
 								className="rounded-full h-12"
 							/>
@@ -74,22 +74,19 @@ const Nav = () => {
 					))}
 				</nav>
 			)}
-			<div className="sm:block hidden bg-quarternary text-lg">
+			<div className="sm:block hidden bg-primary text-lg shadow-lg">
 				<div className="flex justify-between items-center py-3 px-10">
-					<a href="#">
+					<a href="#home">
 						<div className="flex items-center gap-3 uppercase">
 							<img
-								src="\picture_2.jpg"
+								src="\Logo.png"
 								alt="Picture of myself"
-								className="rounded-full h-12"
+								className="h-12"
 							/>
-							<span className="font-semibold">
-								Armando Valencia
-							</span>
 						</div>
 					</a>
 
-					<nav className="sm:block hidden bg-quarternary">
+					<nav className="sm:block hidden bg-primary">
 						<ul className="px-3 py-2">
 							{pages.map((page, idx) => (
 								<a
