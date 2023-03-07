@@ -1,3 +1,3 @@
-## My Portfolio
+## My Personal Website
 
-Welcome to my portfolio! This is a frontend [Vite](https://vitejs.dev/) project that utilizes [React](https://reactjs.org/), [TailwindCSS](https://tailwindcss.com/), and [Chakra UI](https://chakra-ui.com/).
+Welcome to my personal website. This is a frontend [Vite](https://vitejs.dev/) project that utilizes [React](https://reactjs.org/), [TailwindCSS](https://tailwindcss.com/), and [Chakra UI](https://chakra-ui.com/).
