@@ -119,7 +119,7 @@ const Experience = () => {
 								company={job.company}
 								selectedStyle={mobileSelectedStyles}
 								hoverStyle={mobileHoverStyles}
-								key={`MobileExperienceTabs-${idx}`}
+								key={`ExperienceTabs-${idx}`}
 							/>
 						))}
 					</TabList>

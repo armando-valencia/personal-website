@@ -21,7 +21,7 @@ const Contact = () => {
 				<h1 className="text-3xl">03. Contact</h1>
 			</div>
 			<form
-				action={import.meta.env.VITE_CONTACT_FORM_ENDPOINT}
+				action={import.meta.env.VITE_CONTACT_FORM}
 				method="POST"
 				encType="multipart/form-data"
 				className="pb-14"
@@ -33,7 +33,7 @@ const Contact = () => {
 							Name
 						</label>
 						<input
-							className="border rounded-lg p-2 flex border-tertiary text-primary bg-tertiary"
+							className="input-field_contact-form"
 							type="text"
 							name="name"
 							value={name}
@@ -44,7 +44,7 @@ const Contact = () => {
 					<div className="flex flex-col">
 						<label className="uppercase text-sm py-2">Email</label>
 						<input
-							className="border rounded-lg p-2 flex border-tertiary text-primary bg-tertiary"
+							className="input-field_contact-form"
 							type="email"
 							name="email"
 							value={email}
@@ -57,7 +57,7 @@ const Contact = () => {
 				<div className="flex flex-col py-2">
 					<label className="uppercase text-sm py-2">Subject</label>
 					<input
-						className="border-2 rounded-lg p-2 flex border-tertiary text-primary bg-tertiary"
+						className="input-field_contact-form"
 						type="text"
 						name="subject"
 						value={subject}
@@ -68,7 +68,7 @@ const Contact = () => {
 				<div className="flex flex-col py-2">
 					<label className="uppercase text-sm py-2">Message</label>
 					<textarea
-						className="border-2 rounded-lg p-2 flex border-tertiary text-primary bg-tertiary"
+						className="input-field_contact-form"
 						rows="5"
 						name="message"
 						value={message}
