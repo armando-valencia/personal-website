@@ -6,11 +6,11 @@ const Home = () => {
 			<div className="flex justify-center">
 				<img
 					src="\picture.jpg"
-					alt=""
+					alt="Picture of myself"
 					className="rounded-full h-60 px-3 pb-3 mb-4"
 				/>
 			</div>
-			<div className="">
+			<div>
 				Hey! My name is{" "}
 				<span className="text-secondary">Armando Valencia</span> and I'm
 				a 23 year old software engineer from Birmingham, Alabama.

@@ -34,7 +34,7 @@ const Nav = () => {
 							</span>
 						</div>
 					</a>
-					<FiX onClick={handleNav} className="" size={40} />
+					<FiX onClick={handleNav} size={40} />
 				</div>
 			) : (
 				<div className="p-3 bg-quarternary flex justify-between items-center z-[99] sm:hidden">
@@ -51,7 +51,7 @@ const Nav = () => {
 						</div>
 					</a>
 
-					<FiAlignRight onClick={handleNav} className="" size={40} />
+					<FiAlignRight onClick={handleNav} size={40} />
 				</div>
 			)}
 
@@ -80,7 +80,7 @@ const Nav = () => {
 						<div className="flex items-center gap-3 uppercase">
 							<img
 								src="\picture_2.jpg"
-								alt=""
+								alt="Picture of myself"
 								className="rounded-full h-12"
 							/>
 							<span className="font-semibold">

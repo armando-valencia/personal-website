@@ -35,6 +35,10 @@
 	@apply flex justify-center text-secondary pt-2;
 }
 
+.input-field_contact-form {
+	@apply border rounded-lg p-2 flex border-tertiary text-primary bg-tertiary;
+}
+
 @layer base {
 	html {
 		font-family: Roboto Condensed, system-ui, sans-serif;
