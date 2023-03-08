@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 
 const Contact = () => {
 	const [name, setName] = useState("");
@@ -88,9 +89,15 @@ const Contact = () => {
 						></textarea>
 					</div>
 					<div className="flex justify-center">
-						<button className="bg-secondary text-primary hover:text-secondary hover:bg-tertiary mt-4 w-1/2 md:w-1/3 p-3 rounded-full">
+						<motion.button
+							className="bg-secondary text-primary hover:text-secondary hover:bg-tertiary mt-4 w-1/2 md:w-1/3 p-3 rounded-full"
+							whileHover={{
+								scale: 1.1,
+								boxShadow: "0px 0px 8px rgb(255, 255, 255)",
+							}}
+						>
 							Submit
-						</button>
+						</motion.button>
 					</div>
 				</form>
 			</div>

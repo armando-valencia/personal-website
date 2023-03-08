@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
+import { motion } from "framer-motion";
 
 const Home = () => {
 	return (
-		<div className="text-tertiary p-2 text-2xl">
+		<motion.div
+			className="text-tertiary p-2 text-2xl"
+			initial={{ opacity: 0 }}
+			animate={{ opacity: 1 }}
+			transition={{ delay: 1, duration: 1 }}
+		>
 			<div className="flex justify-center">
 				<img
 					src="\picture.jpg"
@@ -17,7 +23,7 @@ const Home = () => {
 				<br />
 				<br />
 			</div>
-		</div>
+		</motion.div>
 	);
 };
 

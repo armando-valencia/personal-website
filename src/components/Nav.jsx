@@ -3,6 +3,7 @@ import { FiAlignRight, FiX } from "react-icons/fi";
 import { AiOutlineHome, AiOutlinePhone } from "react-icons/ai";
 import { BsPerson } from "react-icons/bs";
 import { BiBriefcase } from "react-icons/bi";
+import { motion } from "framer-motion";
 
 const Nav = () => {
 	const [nav, setNav] = useState(false);
@@ -19,9 +20,14 @@ const Nav = () => {
 	];
 
 	return (
-		<div className="sticky top-0 w-full z-50">
+		<motion.div
+			initial={{ y: -400 }}
+			animate={{ y: 0 }}
+			transition={{ delay: 0.2, type: "tween", duration: 0.4 }}
+			className="sticky top-0 w-full z-50 bg-secondary text-primary"
+		>
 			{nav === true ? (
-				<div className="p-3 bg-primary flex justify-between items-center z-[99] sm:hidden">
+				<div className="p-3 bg-tertiary flex justify-between items-center z-[99] sm:hidden">
 					<a href="#home" onClick={handleNav}>
 						<div className="flex items-center gap-3 uppercase">
 							<img
@@ -37,7 +43,7 @@ const Nav = () => {
 					<FiX onClick={handleNav} size={40} />
 				</div>
 			) : (
-				<div className="p-3 bg-primary flex justify-between shadow-xl items-center z-[99] sm:hidden">
+				<div className="p-3 bg-secondary flex justify-between shadow-xl items-center z-[99] sm:hidden">
 					<a href="#home">
 						<div className="flex items-center gap-3 uppercase">
 							<img
@@ -69,19 +75,38 @@ const Nav = () => {
 					))}
 				</nav>
 			)}
-			<div className="sm:block hidden bg-primary text-lg shadow-lg">
+			<div className="sm:block hidden bg-secondary text-primary text-lg shadow-lg">
 				<div className="flex justify-between items-center py-3 px-10">
 					<a href="#home">
-						<div className="flex items-center gap-3 uppercase">
-							<img
-								src="\Logo.png"
-								alt="Picture of myself"
-								className="h-12"
+						<motion.svg
+							width="3em"
+							height="3em"
+							viewBox="0 0 336 391"
+							fill="#01200F"
+							xmlns="http://www.w3.org/2000/svg"
+							initial={{ opacity: 0 }}
+							animate={{ opacity: 1 }}
+							transition={{ duration: 3 }}
+						>
+							<motion.path
+								initial={{ pathLength: 0 }}
+								animate={{ pathLength: 1 }}
+								stroke="#01200F"
+								strokeWidth={12}
+								transition={{
+									duration: 2,
+									repeat: Infinity,
+									repeatType: "mirror",
+									repeatDelay: 1,
+									ease: "easeInOut",
+								}}
+								d="M176 0L336 390.5L272.5 358.5L176 106.5L64.5 358.5L0 390.5L176 0Z"
+								fill="none"
 							/>
-						</div>
+						</motion.svg>
 					</a>
 
-					<nav className="sm:block hidden bg-primary">
+					<nav className="sm:block hidden bg-transparent text-primary">
 						<ul className="px-3 py-2">
 							{pages.map((page, idx) => (
 								<a
@@ -96,7 +121,7 @@ const Nav = () => {
 					</nav>
 				</div>
 			</div>
-		</div>
+		</motion.div>
 	);
 };
 
