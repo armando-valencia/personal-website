@@ -3,6 +3,7 @@ import Contact from "../components/Contact";
 import Experience from "../components/Experience";
 import Home from "../components/Home";
 
+//TODO: reduce font size
 const HomePage = () => (
 	<div className="flex items-center justify-center">
 		<div className="flex-none w-8 md:w-14"></div>
