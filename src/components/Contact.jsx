@@ -16,6 +16,8 @@ const Contact = () => {
 		}, 2500);
 	};
 
+	//TODO: center contact form on mobile devices
+
 	return (
 		<div>
 			<div className="mt-20 mx-2 mb-2 md:m-2 text-left">

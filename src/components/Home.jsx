@@ -1,13 +1,18 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 
+const containerVariants = {
+	hidden: { opacity: 0 },
+	visible: { opacity: 1, transition: { delay: 1, duration: 1.5 } },
+};
+
 const Home = () => {
 	return (
 		<motion.div
 			className="text-tertiary p-2 text-2xl"
-			initial={{ opacity: 0 }}
-			animate={{ opacity: 1 }}
-			transition={{ delay: 1, duration: 1 }}
+			variants={containerVariants}
+			initial="hidden"
+			animate="visible"
 		>
 			<div className="flex justify-center">
 				<img
