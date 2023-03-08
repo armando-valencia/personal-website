@@ -11,9 +11,9 @@ const Experience = () => {
 			dates: "Aug 2021 - Dec 2022",
 			desc: [
 				"Implemented API integration to log inbound phone calls to a PostgreSQL database using JavaScript and Rust",
-				"Built over 20 React components with Material UI to serve customer-facing teams",
+				"Created React components using Material UI to serve customer-facing teams",
 				"Streamlined employee offboarding process through Node scripts, reducing costs by around $15k per month ",
-				"Run Python scripts to pull data for reporting and QA & manage user configurations",
+				"Run Python scripts to pull data for reporting and QA",
 				"Built functionality for our cloud-based contact center by utilizing JavaScript and React on top of Twilio’s APIs ",
 			],
 			skills: "JavaScript, React, Rust, Python, PostgreSQL, Git, Node.js",
@@ -55,7 +55,7 @@ const Experience = () => {
 		color: "#6BAB90",
 		borderBottom: "2px solid",
 		borderBottomColor: "#6BAB90",
-		bg: "#6BAB90",
+		bg: "transparent",
 	};
 
 	const desktopSelectedStyles = {
@@ -68,7 +68,7 @@ const Experience = () => {
 		color: "#6BAB90",
 		borderLeft: "2px solid",
 		borderLeftColor: "#6BAB90",
-		bg: "#393E46",
+		bg: "transparent",
 	};
 
 	return (

@@ -4,7 +4,7 @@
 @tailwind utilities;
 
 .mobile_nav-link {
-	@apply w-[75%] flex justify-center items-center rounded-full shadow-md shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200 text-secondary bg-primary;
+	@apply w-[75%] flex justify-center items-center rounded-full shadow-md shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200 text-tertiary bg-primary;
 }
 
 .mobile_nav-icon {
@@ -12,7 +12,7 @@
 }
 
 .nav-link {
-	@apply cursor-pointer hover:text-secondary text-tertiary bg-transparent px-3 py-2;
+	@apply cursor-pointer hover:text-tertiary text-primary bg-transparent px-3 py-2;
 }
 
 .tab-panel__title {

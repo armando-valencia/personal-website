@@ -5,11 +5,11 @@ const About = () => {
 		"React",
 		"JavaScript",
 		"Node",
+		"Express",
 		"Python",
 		"Rust",
-		"Taiwind",
+		"Tailwind",
 		"Git",
-		"MongoDB",
 		"SQL",
 	];
 
@@ -18,7 +18,7 @@ const About = () => {
 			<div className="flex mt-20 mx-2 mb-2 md:m-2">
 				<h1 className="text-3xl">01. About</h1>
 			</div>
-			<div className="block  text-lg">
+			<div className="block text-lg">
 				<div className="text-tertiary">
 					<p className="px-4 pt-6 pb-4">
 						In 2021, I graduated with my Bachelor's in Management
