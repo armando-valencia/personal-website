@@ -46,28 +46,28 @@ const Experience = () => {
 	];
 
 	const mobileSelectedStyles = {
-		color: "#FFD369",
+		color: "#6BAB90",
 		borderBottom: "3px solid",
-		borderBottomColor: "#FFD369",
+		borderBottomColor: "#6BAB90",
 	};
 
 	const mobileHoverStyles = {
-		color: "#FFD369",
+		color: "#6BAB90",
 		borderBottom: "2px solid",
-		borderBottomColor: "#FFD369",
-		bg: "#393E46",
+		borderBottomColor: "#6BAB90",
+		bg: "#6BAB90",
 	};
 
 	const desktopSelectedStyles = {
-		color: "#FFD369",
+		color: "#6BAB90",
 		borderLeft: "3px solid",
-		borderLeftColor: "#FFD369",
+		borderLeftColor: "#6BAB90",
 	};
 
 	const desktopHoverStyles = {
-		color: "#FFD369",
+		color: "#6BAB90",
 		borderLeft: "2px solid",
-		borderLeftColor: "#FFD369",
+		borderLeftColor: "#6BAB90",
 		bg: "#393E46",
 	};
 
