@@ -88,7 +88,7 @@ const Contact = () => {
 						></textarea>
 					</div>
 					<div className="flex justify-center">
-						<button className="bg-secondary text-primary hover:text-tertiary hover:bg-[#d4a83f] mt-4 w-1/2 md:w-1/3 p-3 rounded-full">
+						<button className="bg-secondary text-primary hover:text-secondary hover:bg-tertiary mt-4 w-1/2 md:w-1/3 p-3 rounded-full">
 							Submit
 						</button>
 					</div>

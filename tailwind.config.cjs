@@ -4,10 +4,10 @@ module.exports = {
 	theme: {
 		extend: {
 			colors: {
-				primary: "#222831",
-				secondary: "#FFD369",
-				tertiary: "#EEEEEE",
-				quarternary: "#393E46",
+				primary: "#01200F",
+				secondary: "#6BAB90",
+				tertiary: "#FFFFFF",
+				quarternary: "#FFFFFF",
 			},
 			fontFamily: {
 				robo: ["Roboto Condensed", "sans-serif"],
@@ -16,3 +16,8 @@ module.exports = {
 	},
 	plugins: [],
 };
+
+// primary: "#383838",
+// 				secondary: "#CDBE78",
+// 				tertiary: "#F2F2F2",
+// 				quarternary: "#066163",
