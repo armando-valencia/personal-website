@@ -24,7 +24,7 @@ const pathVariants = {
 	visible: {
 		pathLength: 1,
 		transition: {
-			duration: 2,
+			duration: 1.5,
 			repeat: Infinity,
 			repeatType: "mirror",
 			repeatDelay: 1,
@@ -53,11 +53,11 @@ const Nav = () => {
 			variants={containerVariants}
 			initial="hidden"
 			animate="visible"
-			className="sticky top-0 w-full z-50 bg-secondary text-primary"
+			className="sticky top-0 w-full z-50 bg-secondary text-quarternary"
 		>
 			{nav === true ? (
 				<div className="p-3 bg-secondary flex justify-between items-center z-[99] sm:hidden">
-					<a href="#home" onClick={handleNav}>
+					<a href="#" onClick={handleNav}>
 						<div className="flex items-center gap-3 uppercase">
 							<svg
 								width="3em"
@@ -67,10 +67,10 @@ const Nav = () => {
 								className="sm:hidden"
 							>
 								<path
-									stroke="#01200F"
+									stroke="#F0A500"
 									strokeWidth={12}
 									d="M176 0L336 390.5L272.5 358.5L176 106.5L64.5 358.5L0 390.5L176 0Z"
-									fill="#01200F"
+									fill="#F0A500"
 								/>
 							</svg>
 							<span className="font-semibold text-lg">
@@ -82,7 +82,7 @@ const Nav = () => {
 				</div>
 			) : (
 				<div className="p-3 bg-secondary flex justify-between shadow-xl items-center z-[99] sm:hidden">
-					<a href="#home">
+					<a href="#">
 						<div className="flex items-center gap-3 uppercase">
 							<svg
 								width="3em"
@@ -92,10 +92,10 @@ const Nav = () => {
 								className="sm:hidden"
 							>
 								<path
-									stroke="#01200F"
+									stroke="#F0A500"
 									strokeWidth={12}
 									d="M176 0L336 390.5L272.5 358.5L176 106.5L64.5 358.5L0 390.5L176 0Z"
-									fill="#01200F"
+									fill="#F0A500"
 								/>
 							</svg>
 							<span className="font-semibold text-lg">
@@ -112,7 +112,11 @@ const Nav = () => {
 				<nav className="fixed w-full h-screen bg-black/80 flex flex-col justify-center items-center z-20">
 					{pages.map((page, idx) => (
 						<a
-							href={`#${page.name.toLowerCase()}`}
+							href={`#${
+								page.name == "Home"
+									? ""
+									: page.name.toLowerCase()
+							}`}
 							className="mobile_nav-link"
 							onClick={handleNav}
 							key={idx}
@@ -122,19 +126,19 @@ const Nav = () => {
 					))}
 				</nav>
 			)}
-			<div className="sm:block hidden bg-secondary text-primary text-lg shadow-lg">
+			<div className="sm:block hidden bg-secondary text-primary text-md shadow-lg">
 				<div className="flex justify-between items-center py-3 px-10">
-					<a href="#home">
+					<a href="#">
 						<motion.svg
-							width="3em"
-							height="3em"
+							width="2.5em"
+							height="2.5em"
 							viewBox="0 0 336 391"
 							xmlns="http://www.w3.org/2000/svg"
 							className="sm:block hidden"
 						>
 							<motion.path
 								variants={pathVariants}
-								stroke="#01200F"
+								stroke="#FFFFFF"
 								strokeWidth={12}
 								d="M176 0L336 390.5L272.5 358.5L176 106.5L64.5 358.5L0 390.5L176 0Z"
 								fill="none"

@@ -5,7 +5,7 @@ import Footer from "./components/Footer";
 
 function App() {
 	return (
-		<div className="bg-primary text-secondary font-robo">
+		<div className="bg-gradient-to-l from-secondary to-primary text-quarternary font-robo">
 			<Nav />
 			<HomePage />
 			<Footer />

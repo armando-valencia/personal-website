@@ -9,7 +9,7 @@ const containerVariants = {
 const Home = () => {
 	return (
 		<motion.div
-			className="text-tertiary p-2 text-2xl"
+			className="text-tertiary p-2 text-md"
 			variants={containerVariants}
 			initial="hidden"
 			animate="visible"
@@ -23,8 +23,8 @@ const Home = () => {
 			</div>
 			<div className="text-center">
 				Hey! My name is{" "}
-				<span className="text-secondary">Armando Valencia</span> and I'm
-				a 23 year old software engineer from Birmingham, Alabama.
+				<span className="text-quarternary">Armando Valencia</span> and
+				I'm a software engineer from Birmingham, Alabama.
 				<br />
 				<br />
 			</div>

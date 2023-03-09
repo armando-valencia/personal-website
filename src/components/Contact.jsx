@@ -19,9 +19,9 @@ const Contact = () => {
 	//TODO: center contact form on mobile devices
 
 	return (
-		<div>
+		<div className="py-6 md:pb-24 md:pt-20">
 			<div className="mt-20 mx-2 mb-2 md:m-2 text-left">
-				<h1 className="text-3xl">03. Contact</h1>
+				<h1 className="text-xl">03. Contact</h1>
 			</div>
 			<div className="md:flex flex-col justify-center items-center">
 				<form
@@ -92,7 +92,7 @@ const Contact = () => {
 					</div>
 					<div className="flex justify-center">
 						<motion.button
-							className="bg-secondary text-primary hover:text-secondary hover:bg-tertiary mt-4 w-1/2 md:w-1/3 p-3 rounded-full"
+							className="bg-secondary text-quarternary hover:text-secondary hover:bg-quarternary mt-4 w-1/2 md:w-1/3 p-3 rounded-full"
 							whileHover={{
 								scale: 1.1,
 								boxShadow: "0px 0px 8px rgb(255, 255, 255)",
