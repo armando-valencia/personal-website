@@ -46,35 +46,35 @@ const Experience = () => {
 	];
 
 	const mobileSelectedStyles = {
-		color: "#6BAB90",
+		color: "#FFFFFF",
 		borderBottom: "3px solid",
-		borderBottomColor: "#6BAB90",
+		borderBottomColor: "#FFFFFF",
 	};
 
 	const mobileHoverStyles = {
-		color: "#6BAB90",
+		color: "#FFFFFF",
 		borderBottom: "2px solid",
-		borderBottomColor: "#6BAB90",
+		borderBottomColor: "#FFFFFF",
 		bg: "transparent",
 	};
 
 	const desktopSelectedStyles = {
-		color: "#6BAB90",
+		color: "#FFFFFF",
 		borderLeft: "3px solid",
-		borderLeftColor: "#6BAB90",
+		borderLeftColor: "#FFFFFF",
 	};
 
 	const desktopHoverStyles = {
-		color: "#6BAB90",
+		color: "#FFFFFF",
 		borderLeft: "2px solid",
-		borderLeftColor: "#6BAB90",
+		borderLeftColor: "#FFFFFF",
 		bg: "transparent",
 	};
 
 	return (
 		<div className="justify-center py-6 md:pb-24 md:pt-20">
 			<div className="flex mt-20 mx-2 mb-2 md:m-2">
-				<h1 className="text-3xl">02. Experience</h1>
+				<h1 className="text-xl">02. Experience</h1>
 			</div>
 			<div className="justify-center md:block hidden p-3 md:pb-24">
 				<Tabs
