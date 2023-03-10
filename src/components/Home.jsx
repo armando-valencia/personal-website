@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import { TypeAnimation } from "react-type-animation";
 
 const containerVariants = {
 	hidden: { opacity: 0 },
@@ -22,19 +23,25 @@ const Home = () => {
 					className="rounded h-44 px-3 pb-3 mb-4"
 				/>
 			</div>
-			<div className="text-center text-quarternary">
-				Hey! My name is{" "}
-				<span className="text-tertiary">Armando Valencia</span> and I'm
-				a software engineer.
-				<br />
-				<br />
-			</div>
+			<TypeAnimation
+				sequence={[
+					"",
+					2000,
+					"Hey!",
+					1000,
+					"Hey! My name is Armando Valencia.",
+					1300,
+					"Hey! My name is Armando Valencia. I'm a software engineer.",
+					1300,
+				]}
+				speed={40}
+			/>
 			<div className="list-none text-quarternary">
 				{menuItems.map((menuItem, idx) => (
 					<li className="text-left" key={idx}>
 						<a
 							href={`#${menuItem.toLowerCase()}`}
-							className="hover:text-tertiary "
+							className="hover:text-tertiary"
 						>
 							&gt; {menuItem.toUpperCase()}
 						</a>
