@@ -21,7 +21,7 @@ const Contact = () => {
 	return (
 		<div className="py-6 md:pb-24 md:pt-20">
 			<div className="mt-20 mx-2 mb-2 md:m-2 text-left">
-				<h1 className="text-xl">03. Contact</h1>
+				<h1 className="text-xl text-tertiary">03. Contact</h1>
 			</div>
 			<div className="md:flex flex-col justify-center items-center">
 				<form
