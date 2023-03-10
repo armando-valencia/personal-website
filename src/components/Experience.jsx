@@ -74,7 +74,7 @@ const Experience = () => {
 	return (
 		<div className="justify-center py-6 md:pb-24 md:pt-20">
 			<div className="flex mt-20 mx-2 mb-2 md:m-2">
-				<h1 className="text-xl">02. Experience</h1>
+				<h1 className="text-xl text-tertiary">02. Experience</h1>
 			</div>
 			<div className="justify-center md:block hidden p-3 md:pb-24">
 				<Tabs

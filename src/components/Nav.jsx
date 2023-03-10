@@ -53,10 +53,10 @@ const Nav = () => {
 			variants={containerVariants}
 			initial="hidden"
 			animate="visible"
-			className="sticky top-0 w-full z-50 bg-secondary text-quarternary"
+			className="sticky top-0 w-full z-50 bg-primary text-quarternary"
 		>
 			{nav === true ? (
-				<div className="p-3 bg-secondary flex justify-between items-center z-[99] sm:hidden">
+				<div className="p-3 bg-primary flex justify-between items-center z-[99] sm:hidden">
 					<a href="#" onClick={handleNav}>
 						<div className="flex items-center gap-3 uppercase">
 							<svg
@@ -67,10 +67,10 @@ const Nav = () => {
 								className="sm:hidden"
 							>
 								<path
-									stroke="#F0A500"
+									stroke="#fff"
 									strokeWidth={12}
 									d="M176 0L336 390.5L272.5 358.5L176 106.5L64.5 358.5L0 390.5L176 0Z"
-									fill="#F0A500"
+									fill="none"
 								/>
 							</svg>
 							<span className="font-semibold text-lg">
@@ -81,7 +81,7 @@ const Nav = () => {
 					<FiX onClick={handleNav} size={40} />
 				</div>
 			) : (
-				<div className="p-3 bg-secondary flex justify-between shadow-xl items-center z-[99] sm:hidden">
+				<div className="p-3 bg-primary flex justify-between shadow-xl items-center z-[99] sm:hidden">
 					<a href="#">
 						<div className="flex items-center gap-3 uppercase">
 							<svg
@@ -92,10 +92,10 @@ const Nav = () => {
 								className="sm:hidden"
 							>
 								<path
-									stroke="#F0A500"
+									stroke="#fff"
 									strokeWidth={12}
 									d="M176 0L336 390.5L272.5 358.5L176 106.5L64.5 358.5L0 390.5L176 0Z"
-									fill="#F0A500"
+									fill="none"
 								/>
 							</svg>
 							<span className="font-semibold text-lg">
@@ -126,7 +126,7 @@ const Nav = () => {
 					))}
 				</nav>
 			)}
-			<div className="sm:block hidden bg-secondary text-primary text-md shadow-lg">
+			<div className="sm:block hidden bg-primary text-primary text-md shadow-lg">
 				<div className="flex justify-between items-center py-3 px-10">
 					<a href="#">
 						<motion.svg
