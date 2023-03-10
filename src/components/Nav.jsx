@@ -112,10 +112,10 @@ const Nav = () => {
 				<nav className="fixed w-full h-screen bg-black/80 flex flex-col justify-center items-center z-20">
 					{pages.map((page, idx) => (
 						<a
-							href={`#${
+							href={`${
 								page.name == "Home"
-									? ""
-									: page.name.toLowerCase()
+									? "#"
+									: "#" + page.name.toLowerCase()
 							}`}
 							className="mobile_nav-link"
 							onClick={handleNav}
@@ -150,7 +150,11 @@ const Nav = () => {
 						<ul className="px-3 py-2">
 							{pages.map((page, idx) => (
 								<a
-									href={`#${page.name.toLowerCase()}`}
+									href={`${
+										page.name == "Home"
+											? "#"
+											: "#" + page.name.toLowerCase()
+									}`}
 									className="nav-link"
 									key={idx}
 								>
