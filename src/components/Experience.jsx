@@ -10,13 +10,14 @@ const Experience = () => {
 			title: "Software Engineer",
 			dates: "Aug 2021 - Dec 2022",
 			desc: [
-				"Implemented API integration to log inbound phone calls to a PostgreSQL database using JavaScript and Rust",
-				"Created React components using Material UI to serve customer-facing teams",
-				"Streamlined employee offboarding process through Node scripts, reducing costs by around $15k per month ",
-				"Run Python scripts to pull data for reporting and QA",
-				"Built functionality for our cloud-based contact center by utilizing JavaScript and React on top of Twilio’s APIs ",
+				"Implemented API integration to log phone calls into a PostgreSQL database using JavaScript and Rust",
+				"Created React components using Material UI and ES6 features to automate processes for support teams",
+				"Developed Node & Python scripts to streamline employee off-boarding process, pull data for reporting, and write data to third party application",
+				// "Run Python scripts to pull data for reporting and QA",
+				// "Built functionality for our cloud-based contact center by utilizing JavaScript and React on top of Twilio’s APIs ",
+				"Migrated legacy CRM code into a modern stack utilizing Rust",
 			],
-			skills: "JavaScript, React, Rust, Python, PostgreSQL, Git, Node.js",
+			skills: "JavaScript, React, Rust, Python, PostgreSQL, Git, Node",
 		},
 		{
 			company: "Walmart Global",
@@ -72,9 +73,9 @@ const Experience = () => {
 	};
 
 	return (
-		<div className="justify-center py-6 md:pb-24 md:pt-20">
+		<div className="justify-center py-6 pb-12 md:pb-24 md:pt-20">
 			<div className="flex mt-20 mx-2 mb-2 md:m-2">
-				<h1 className="text-xl text-tertiary">02. Experience</h1>
+				<h1 className="heading">02. Experience</h1>
 			</div>
 			<div className="justify-center md:block hidden p-3 md:pb-24">
 				<Tabs

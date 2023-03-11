@@ -21,9 +21,13 @@ const Contact = () => {
 	return (
 		<div className="py-6 md:pb-24 md:pt-20">
 			<div className="mt-20 mx-2 mb-2 md:m-2 text-left">
-				<h1 className="text-xl text-tertiary">03. Contact</h1>
+				<h1 className="heading">03. Contact</h1>
 			</div>
 			<div className="md:flex flex-col justify-center items-center">
+				<div className="px-4">
+					Please submit the form below if you want to reach out to me.
+					I'll get back to you ASAP!
+				</div>
 				<form
 					action={import.meta.env.VITE_CONTACT_FORM}
 					method="POST"

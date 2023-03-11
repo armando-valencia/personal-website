@@ -60,8 +60,8 @@ const Nav = () => {
 					<a href="#" onClick={handleNav}>
 						<div className="flex items-center gap-3 uppercase">
 							<svg
-								width="3em"
-								height="3em"
+								width="2.5em"
+								height="2.5em"
 								viewBox="0 0 336 391"
 								xmlns="http://www.w3.org/2000/svg"
 								className="sm:hidden"
@@ -73,7 +73,7 @@ const Nav = () => {
 									fill="none"
 								/>
 							</svg>
-							<span className="font-semibold text-lg">
+							<span className="font-semibold text-2xl">
 								Armando Valencia
 							</span>
 						</div>
@@ -85,8 +85,8 @@ const Nav = () => {
 					<a href="#">
 						<div className="flex items-center gap-3 uppercase">
 							<svg
-								width="3em"
-								height="3em"
+								width="2.5em"
+								height="2.5em"
 								viewBox="0 0 336 391"
 								xmlns="http://www.w3.org/2000/svg"
 								className="sm:hidden"
@@ -98,7 +98,7 @@ const Nav = () => {
 									fill="none"
 								/>
 							</svg>
-							<span className="font-semibold text-lg">
+							<span className="font-semibold text-2xl">
 								Armando Valencia
 							</span>
 						</div>
