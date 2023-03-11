@@ -10,7 +10,7 @@ const HomePage = () => (
 		<div className="grow max-w-xl">
 			<div
 				id="home"
-				className="h-[85vh] flex items-center justify-center text-center"
+				className="h-[95vh] flex items-center justify-center text-center"
 			>
 				<Home />
 			</div>

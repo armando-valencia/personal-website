@@ -5,14 +5,10 @@ import Footer from "./components/Footer";
 
 function App() {
 	return (
-		<div className="bg-primary text-quarternary font-nunito">
-			<div className="border-l-4 border-r-4 border-[#4700f7]">
-				<div className="border-l-4 border-r-4 border-[#fff]">
-					<Nav />
-					<HomePage />
-					<Footer />
-				</div>
-			</div>
+		<div className="text-quarternary font-nunito bg-black/70">
+			<Nav />
+			<HomePage />
+			<Footer />
 		</div>
 	);
 }
