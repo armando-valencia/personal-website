@@ -5,7 +5,7 @@ import Footer from "./components/Footer";
 
 function App() {
 	return (
-		<div className="text-quarternary font-nunito bg-black/70">
+		<div className="text-quarternary font-nunito bg-black/80">
 			<Nav />
 			<HomePage />
 			<Footer />

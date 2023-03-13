@@ -8,8 +8,16 @@
 	@apply text-4xl text-tertiary;
 }
 
+.section-container {
+	@apply md:py-8 md:pb-24 md:pt-20;
+}
+
+.section-container-heading {
+	@apply flex md:mt-20 mb-2 md:m-2;
+}
+
 .mobile_nav-link {
-	@apply w-[75%] flex justify-center items-center rounded-full shadow-md shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200 text-quarternary bg-primary;
+	@apply w-[75%] flex justify-center items-center rounded-full shadow-md shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200 text-quarternary bg-primary text-xl;
 }
 
 .mobile_nav-icon {
@@ -17,27 +25,27 @@
 }
 
 .nav-link {
-	@apply cursor-pointer hover:text-tertiary text-quarternary bg-transparent px-3 py-2;
+	@apply cursor-pointer hover:text-tertiary text-quarternary text-3xl bg-transparent p-6;
 }
 
 .tab-panel__title {
-	@apply text-quarternary text-xl;
+	@apply text-quarternary text-3xl;
 }
 
 .tab-panel__dates {
-	@apply text-gray-400 text-sm font-light italic;
+	@apply text-gray-400 text-xl font-light italic;
 }
 
 .tab-panel__desc {
-	@apply text-tertiary text-sm list-disc py-1;
+	@apply text-tertiary text-lg md:text-xl list-disc py-1;
 }
 
 .tab-panel__skills {
-	@apply text-quarternary text-sm;
+	@apply text-quarternary text-lg md:text-xl;
 }
 
 .tab-panel__skills-mobile {
-	@apply flex justify-center text-quarternary pt-2;
+	@apply text-quarternary pt-2;
 }
 
 .input-field_contact-form {
