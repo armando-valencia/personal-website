@@ -126,15 +126,15 @@ const Nav = () => {
 					))}
 				</nav>
 			)}
-			<div className="sm:block hidden bg-primary text-primary text-md shadow-lg">
-				<div className="flex justify-between items-center py-3 px-10">
+			<div className="sm:block hidden bg-primary text-primary text-lg shadow-lg">
+				<div className="flex justify-between items-center py-6 px-16">
 					<a href="#">
 						<motion.svg
-							width="2.5em"
-							height="2.5em"
+							width="4em"
+							height="4em"
 							viewBox="0 0 336 391"
 							xmlns="http://www.w3.org/2000/svg"
-							className="sm:block hidden"
+							className="sm:block hidden pl-3"
 						>
 							<motion.path
 								variants={pathVariants}

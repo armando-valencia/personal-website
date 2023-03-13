@@ -12,10 +12,10 @@ const Experience = () => {
 			desc: [
 				"Implemented API integration to log phone calls into a PostgreSQL database using JavaScript and Rust",
 				"Created React components using Material UI and ES6 features to automate processes for support teams",
-				"Developed Node & Python scripts to streamline employee off-boarding process, pull data for reporting, and write data to third party application",
+				"Developed Node & Python scripts to pull data for reporting and write data to third-party data platform",
 				// "Run Python scripts to pull data for reporting and QA",
 				// "Built functionality for our cloud-based contact center by utilizing JavaScript and React on top of Twilio’s APIs ",
-				"Migrated legacy CRM code into a modern stack utilizing Rust",
+				"Migrated legacy code being used in CRM into Rust",
 			],
 			skills: "JavaScript, React, Rust, Python, PostgreSQL, Git, Node",
 		},
@@ -24,9 +24,8 @@ const Experience = () => {
 			title: "Software Developer Intern",
 			dates: "Jan 2021 - May 2021",
 			desc: [
-				"Developed UI of landing page for a React web-app",
-				"Migrated a multi-page user experience into a single page to enhance user experience",
-				"Lead contributor in development cycle, from concept & design to development phases",
+				"Designed and developed UI of landing page for a React web-app",
+				"Migrated a multi-page user experience into a single page to enhance user experience and performance",
 				"Utilized GitHub as version control software to track and update code",
 				"Documented codebase for future teams to refer back to",
 			],
@@ -73,8 +72,8 @@ const Experience = () => {
 	};
 
 	return (
-		<div className="justify-center py-6 pb-12 md:pb-24 md:pt-20">
-			<div className="flex mt-20 mx-2 mb-2 md:m-2">
+		<div className="section-container">
+			<div className="section-container-heading">
 				<h1 className="heading">02. Experience</h1>
 			</div>
 			<div className="justify-center md:block hidden p-3 md:pb-24">
@@ -114,7 +113,7 @@ const Experience = () => {
 				<Tabs
 					isFitted
 					isLazy
-					size="md"
+					size="lg"
 					className="text-gray-500 border-b-gray-500 w-full"
 					orientation="horizontal"
 				>

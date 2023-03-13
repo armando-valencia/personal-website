@@ -14,11 +14,18 @@ const About = () => {
 	];
 
 	return (
-		<div className="py-6 md:pb-24 md:pt-20">
-			<div className="flex mt-20 mx-2 mb-2 md:m-2">
+		<div className="section-container">
+			<div className="section-container-heading">
 				<h1 className="heading">01. About</h1>
 			</div>
-			<div className="block text-base">
+			<div className="block text-lg md:text-2xl">
+				<div className="flex justify-center">
+					<img
+						src="\picture.jpg"
+						alt="Picture of myself"
+						className="rounded h-44 md:h-60 px-3 pb-3 mb-4"
+					/>
+				</div>
 				<div className="text-quarternary">
 					<p className="px-4 pt-6 pb-4">
 						In 2021, I graduated with my Bachelor's in Management
@@ -26,12 +33,12 @@ const About = () => {
 						for creating scalable software solutions.
 					</p>
 				</div>
-				<div className="flex justify-center mt-4 p-2 text-tertiary text-lg">
+				<div className="flex justify-center mt-4 p-2 text-tertiary text-3xl">
 					Tools and languages I have experience with:
 				</div>
 				<div className="grid grid-cols-3 gap-1 justify-items-center list-none text-secondary">
 					{skills.map((skill) => (
-						<li key={skill} className="text-base">
+						<li key={skill} className="">
 							{skill}
 						</li>
 					))}
