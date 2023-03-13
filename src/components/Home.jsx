@@ -2,11 +2,6 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
 
-const containerVariants = {
-	hidden: { opacity: 0 },
-	visible: { opacity: 1, transition: { delay: 1, duration: 1.5 } },
-};
-
 const imgVariants = {
 	hidden: {
 		y: -2000,
@@ -33,7 +28,6 @@ const Home = () => {
 	return (
 		<motion.div
 			className="text-tertiary p-2 text-2xl md:text-4xl flex items-center flex-col"
-			// variants={containerVariants}
 			initial="hidden"
 			animate="visible"
 		>

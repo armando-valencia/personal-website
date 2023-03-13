@@ -34,7 +34,7 @@ const About = () => {
 					</p>
 				</div>
 				<div className="flex justify-center mt-4 p-2 text-tertiary text-3xl">
-					Tools and languages I have experience with:
+					Skills:
 				</div>
 				<div className="grid grid-cols-3 gap-1 justify-items-center list-none text-secondary">
 					{skills.map((skill) => (
