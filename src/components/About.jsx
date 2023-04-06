@@ -18,25 +18,36 @@ const About = () => {
 			<div className="section-container-heading">
 				<h1 className="heading">01. About</h1>
 			</div>
-			<div className="block text-lg md:text-2xl">
+			<div className="block text-lg md:text-xl">
 				<div className="flex justify-center">
 					<img
 						src="\picture.jpg"
 						alt="Picture of myself"
-						className="rounded h-44 md:h-60 px-3 pb-3 mb-4"
+						className="rounded h-44 md:h-60 px-3 p-3 my-4"
 					/>
 				</div>
 				<div className="text-quarternary">
 					<p className="px-4 pt-6 pb-4">
+						My name is Armando Valencia. I'm a 23 year old software
+						developer who is ambitious to deliver innovative, modern
+						software solutions.
+					</p>
+					<p className="px-4 pt-6 pb-4">
 						In 2021, I graduated with my Bachelor's in Management
-						Information Systems and a fresh, high-driven curiosity
-						for creating scalable software solutions.
+						Information Systems from the University of Alabama. I
+						have always been an enthusiastic student that enjoys
+						learning and solving problems. Struggling through my
+						first semester of programming classes can support that.
+					</p>
+					<p className="px-4 pt-6 pb-4">
+						I appreciate all aspects of software development, but
+						find myself more eager to work on the frontend.
 					</p>
 				</div>
-				<div className="flex justify-center mt-4 p-2 text-tertiary text-3xl">
+				<div className="flex justify-center mt-4 p-2 text-secondary text-2xl">
 					Skills:
 				</div>
-				<div className="grid grid-cols-3 gap-1 justify-items-center list-none text-secondary">
+				<div className="grid grid-cols-2 md:grid-cols-3 gap-1 justify-items-center list-none text-quarternary">
 					{skills.map((skill) => (
 						<li key={skill} className="">
 							{skill}

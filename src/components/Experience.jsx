@@ -76,7 +76,7 @@ const Experience = () => {
 			<div className="section-container-heading">
 				<h1 className="heading">02. Experience</h1>
 			</div>
-			<div className="justify-center md:block hidden p-3 md:pb-24">
+			<div className="justify-center md:block hidden px-3 py-6 md:pb-24">
 				<Tabs
 					isFitted
 					isLazy

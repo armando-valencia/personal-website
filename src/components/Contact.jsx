@@ -21,10 +21,10 @@ const Contact = () => {
 			<div className="section-container-heading">
 				<h1 className="heading">03. Contact</h1>
 			</div>
-			<div className="md:flex flex-col justify-center items-center text-xl md:text-2xl py-3">
+			<div className="md:flex flex-col text-quarternary justify-center items-center text-xl md:text-2xl py-3">
 				<div className="px-4">
 					If you want to talk opportunities or give any feedback,
-					please complete the form below!
+					please complete the form below.
 				</div>
 				<form
 					action={import.meta.env.VITE_CONTACT_FORM}

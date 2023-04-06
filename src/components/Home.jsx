@@ -27,19 +27,26 @@ const Home = () => {
 	const menuItems = ["About", "Experience", "Contact"];
 	return (
 		<motion.div
-			className="text-tertiary p-2 text-2xl md:text-4xl flex items-center flex-col"
+			className="text-secondary p-2 text-2xl md:text-4xl block"
 			initial="hidden"
 			animate="visible"
 		>
-			<div className="flex justify-center">
+			<h1 className="py-4 text-4xl font-bold">
+				Hey! My name is Armando Valencia. Welcome to my personal
+				website.
+			</h1>
+			<p className="text-quarternary text-2xl">
+				I am a software developer from Birmingham, AL.{" "}
+			</p>
+			{/* <div className="flex justify-center">
 				<motion.img
 					variants={imgVariants}
 					src="\ARMANDO.png"
 					alt=""
 					className="rounded h-44 md:h-60 px-3 pb-3 mb-4"
 				/>
-			</div>
-			<TypeAnimation
+			</div> */}
+			{/* <TypeAnimation
 				sequence={[
 					"",
 					4000,
@@ -51,9 +58,9 @@ const Home = () => {
 					1300,
 				]}
 				speed={40}
-			/>
+			/> */}
 
-			<motion.div
+			{/* <motion.div
 				variants={menuVariants}
 				className="list-none text-quarternary pt-4"
 			>
@@ -67,7 +74,7 @@ const Home = () => {
 						</a>
 					</li>
 				))}
-			</motion.div>
+			</motion.div> */}
 		</motion.div>
 	);
 };

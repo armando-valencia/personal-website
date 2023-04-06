@@ -53,7 +53,7 @@ const Nav = () => {
 			variants={containerVariants}
 			initial="hidden"
 			animate="visible"
-			className="sticky top-0 w-full z-50 bg-primary text-quarternary"
+			className="sticky top-0 w-full md:w-3/4 z-50 bg-primary text-quarternary"
 		>
 			{nav === true ? (
 				<div className="p-3 bg-primary flex justify-between items-center z-[99] sm:hidden">
@@ -126,12 +126,12 @@ const Nav = () => {
 					))}
 				</nav>
 			)}
-			<div className="sm:block hidden bg-primary text-primary text-lg shadow-lg">
-				<div className="flex justify-between items-center py-6 px-16">
+			<div className="sm:block hidden bg-primary text-primary text-lg shadow-xl">
+				<div className="flex justify-between items-center py-4 px-16">
 					<a href="#">
 						<motion.svg
-							width="4em"
-							height="4em"
+							width="3.5em"
+							height="3.5em"
 							viewBox="0 0 336 391"
 							xmlns="http://www.w3.org/2000/svg"
 							className="sm:block hidden pl-3"
@@ -146,20 +146,25 @@ const Nav = () => {
 						</motion.svg>
 					</a>
 
-					<nav className="sm:block hidden bg-transparent text-primary">
-						<ul className="px-3 py-2">
+					<nav className="sm:block bg-transparent text-primary">
+						<ul className="px-3 py-1 flex items-center">
 							{pages.map((page, idx) => (
-								<a
-									href={`${
-										page.name == "Home"
-											? "#"
-											: "#" + page.name.toLowerCase()
-									}`}
-									className="nav-link"
-									key={idx}
-								>
-									{page.name}
-								</a>
+								<>
+									<a
+										href={`${
+											page.name == "Home"
+												? "#"
+												: "#" + page.name.toLowerCase()
+										}`}
+										className="nav-link"
+										key={idx}
+									>
+										{page.name}
+									</a>
+									{idx !== pages.length - 1 && (
+										<p className="text-white">&#9830;</p>
+									)}
+								</>
 							))}
 						</ul>
 					</nav>

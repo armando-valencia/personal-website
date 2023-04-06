@@ -5,7 +5,7 @@ import Footer from "./components/Footer";
 
 function App() {
 	return (
-		<div className="text-quarternary font-nunito bg-black/80">
+		<div className="text-secondary font-barlow bg-primary/60 md:flex flex-col items-center justify-center">
 			<Nav />
 			<HomePage />
 			<Footer />

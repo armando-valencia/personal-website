@@ -4,14 +4,15 @@ module.exports = {
 	theme: {
 		extend: {
 			colors: {
-				primary: "#010102",
-				secondary: "#c401ff",
+				primary: "#010b12",
+				secondary: "#39ff13",
 				tertiary: "#f76c00",
 				quarternary: "#FFFFFF",
 			},
 			fontFamily: {
 				robo: ["Roboto Condensed", "sans-serif"],
 				nunito: ["VT323"],
+				barlow: ["Barlow"],
 			},
 		},
 	},
