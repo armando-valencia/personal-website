@@ -1,11 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;1,300;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-.nav-link {
-	@apply w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200;
+.heading {
+	@apply text-4xl text-secondary;
+}
+/* TODO: clean up css */
+
+.section-container {
+	@apply py-20 md:py-8 md:pb-44 md:pt-20;
 }
 
-.nav-link__active {
-	@apply w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200 text-white bg-blue-400;
+.section-container__heading {
+	@apply flex md:mt-20 mb-2 md:m-2;
+}
+
+.mobile_nav-link {
+	@apply w-[75%] flex justify-center items-center rounded-full shadow-md shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200 text-quarternary bg-primary text-xl;
+}
+
+.mobile_nav-icon {
+	@apply absolute top-4 right-4 z-[99] sm:hidden cursor-pointer;
+}
+
+.nav-link {
+	@apply cursor-pointer hover:text-secondary text-quarternary text-2xl bg-transparent p-5;
+}
+
+.tab-panel__title {
+	@apply text-quarternary text-3xl;
+}
+
+.tab-panel__dates {
+	@apply text-gray-400 text-xl font-light italic;
+}
+
+.tab-panel__desc {
+	@apply text-secondary text-lg md:text-xl list-disc py-1;
+}
+
+.tab-panel__skills {
+	@apply text-quarternary text-lg md:text-xl;
+}
+
+.tab-panel__skills-mobile {
+	@apply text-quarternary pt-2;
+}
+
+.input-field_contact-form {
+	@apply border rounded-lg p-2 flex border-quarternary text-primary bg-quarternary;
+}
+
+@layer base {
+	html {
+		font-family: Roboto Condensed, system-ui, sans-serif;
+	}
 }

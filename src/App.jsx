@@ -1,22 +1,14 @@
 import { Route, Routes } from "react-router-dom";
-import Sidenav from "./components/Sidenav";
 import Nav from "./components/Nav";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Contact from "./pages/Contact";
-import Main from "./components/Main";
+import HomePage from "./pages/HomePage";
+import Footer from "./components/Footer";
 
 function App() {
 	return (
-		<div>
-			<Sidenav />
+		<div className="text-secondary font-barlow bg-primary/60 md:flex flex-col items-center justify-center">
 			<Nav />
-
-			<Routes>
-				<Route path="/" element={<Home />} />
-				<Route path="/about" element={<About />} />
-				<Route path="/contact" element={<Contact />} />
-			</Routes>
+			<HomePage />
+			<Footer />
 		</div>
 	);
 }
