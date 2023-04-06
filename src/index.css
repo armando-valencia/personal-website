@@ -8,12 +8,13 @@
 .heading {
 	@apply text-4xl text-secondary;
 }
+/* TODO: clean up css */
 
 .section-container {
-	@apply md:py-8 md:pb-24 md:pt-20;
+	@apply py-20 md:py-8 md:pb-44 md:pt-20;
 }
 
-.section-container-heading {
+.section-container__heading {
 	@apply flex md:mt-20 mb-2 md:m-2;
 }
 

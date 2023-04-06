@@ -18,7 +18,7 @@ const Contact = () => {
 
 	return (
 		<div className="section-container">
-			<div className="section-container-heading">
+			<div className="section-container__heading">
 				<h1 className="heading">03. Contact</h1>
 			</div>
 			<div className="md:flex flex-col text-quarternary justify-center items-center text-xl md:text-2xl py-3">
