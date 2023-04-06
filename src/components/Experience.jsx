@@ -13,8 +13,6 @@ const Experience = () => {
 				"Implemented API integration to log phone calls into a PostgreSQL database using JavaScript and Rust",
 				"Created React components using Material UI and ES6 features to automate processes for support teams",
 				"Developed Node & Python scripts to pull data for reporting and write data to third-party data platform",
-				// "Run Python scripts to pull data for reporting and QA",
-				// "Built functionality for our cloud-based contact center by utilizing JavaScript and React on top of Twilio’s APIs ",
 				"Migrated legacy code being used in CRM into Rust",
 			],
 			skills: "JavaScript, React, Rust, Python, PostgreSQL, Git, Node",
@@ -73,7 +71,7 @@ const Experience = () => {
 
 	return (
 		<div className="section-container">
-			<div className="section-container-heading">
+			<div className="section-container__heading">
 				<h1 className="heading">02. Experience</h1>
 			</div>
 			<div className="justify-center md:block hidden px-3 py-6 md:pb-24">

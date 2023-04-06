@@ -11,11 +11,12 @@ const About = () => {
 		"Tailwind",
 		"Git",
 		"SQL",
+		"GraphQL",
 	];
 
 	return (
 		<div className="section-container">
-			<div className="section-container-heading">
+			<div className="section-container__heading">
 				<h1 className="heading">01. About</h1>
 			</div>
 			<div className="block text-lg md:text-xl">
@@ -29,7 +30,7 @@ const About = () => {
 				<div className="text-quarternary">
 					<p className="px-4 pt-6 pb-4">
 						My name is Armando Valencia. I'm a 23 year old software
-						developer who is ambitious to deliver innovative, modern
+						developer who is ambitious to deliver innovative
 						software solutions.
 					</p>
 					<p className="px-4 pt-6 pb-4">
@@ -39,15 +40,11 @@ const About = () => {
 						learning and solving problems. Struggling through my
 						first semester of programming classes can support that.
 					</p>
-					<p className="px-4 pt-6 pb-4">
-						I appreciate all aspects of software development, but
-						find myself more eager to work on the frontend.
-					</p>
 				</div>
 				<div className="flex justify-center mt-4 p-2 text-secondary text-2xl">
 					Skills:
 				</div>
-				<div className="grid grid-cols-2 md:grid-cols-3 gap-1 justify-items-center list-none text-quarternary">
+				<div className="grid grid-cols-2 gap-1 justify-items-center list-none text-quarternary">
 					{skills.map((skill) => (
 						<li key={skill} className="">
 							{skill}
