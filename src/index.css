@@ -6,17 +6,17 @@
 @tailwind utilities;
 
 .heading {
-	@apply text-4xl text-secondary;
+	@apply text-4xl text-secondary capitalize pt-10;
 }
 /* TODO: clean up css */
 
 .section-container {
-	@apply py-20 md:py-8 md:pb-44 md:pt-20;
+	@apply pb-24 md:pb-44;
 }
 
-.section-container__heading {
+/* .section-container__heading {
 	@apply flex md:mt-20 mb-2 md:m-2;
-}
+} */
 
 .mobile_nav-link {
 	@apply w-[75%] flex justify-center items-center rounded-full shadow-md shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200 text-quarternary bg-primary text-xl;

@@ -16,9 +16,6 @@ const About = () => {
 
 	return (
 		<div className="section-container">
-			<div className="section-container__heading">
-				<h1 className="heading">01. About</h1>
-			</div>
 			<div className="block text-lg md:text-xl">
 				<div className="flex justify-center">
 					<img
@@ -28,17 +25,21 @@ const About = () => {
 					/>
 				</div>
 				<div className="text-quarternary">
-					<p className="px-4 pt-6 pb-4">
+					{/* <p className="px-4 pt-6 pb-4">
 						My name is Armando Valencia. I'm a 23 year old software
 						developer who is ambitious to deliver innovative
 						software solutions.
-					</p>
+					</p> */}
 					<p className="px-4 pt-6 pb-4">
 						In 2021, I graduated with my Bachelor's in Management
-						Information Systems from the University of Alabama. I
-						have always been an enthusiastic student that enjoys
-						learning and solving problems. Struggling through my
-						first semester of programming classes can support that.
+						Information Systems. I have always been an enthusiastic
+						student that enjoys learning and solving problems.
+						Struggling through my first semester of programming
+						classes can support that.
+					</p>
+					<p className="px-4 pt-6 pb-4">
+						Some of my hobbies include watching sports, cooking, and
+						going on hikes or walks.
 					</p>
 				</div>
 				<div className="flex justify-center mt-4 p-2 text-secondary text-2xl">

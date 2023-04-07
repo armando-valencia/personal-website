@@ -54,9 +54,10 @@ const Nav = () => {
 			initial="hidden"
 			animate="visible"
 			className="sticky top-0 w-full md:w-3/4 z-50 bg-primary text-quarternary"
+			key="nav"
 		>
 			{nav === true ? (
-				<div className="p-3 bg-primary flex justify-between items-center z-[99] sm:hidden">
+				<div className="p-3 bg-primary flex justify-between items-center z-[99] md:hidden">
 					<a href="#" onClick={handleNav}>
 						<div className="flex items-center gap-3 uppercase">
 							<svg
@@ -64,7 +65,7 @@ const Nav = () => {
 								height="2.5em"
 								viewBox="0 0 336 391"
 								xmlns="http://www.w3.org/2000/svg"
-								className="sm:hidden"
+								className="md:hidden"
 							>
 								<path
 									stroke="#fff"
@@ -81,7 +82,7 @@ const Nav = () => {
 					<FiX onClick={handleNav} size={40} />
 				</div>
 			) : (
-				<div className="p-3 bg-primary flex justify-between shadow-xl items-center z-[99] sm:hidden">
+				<div className="p-3 bg-primary flex justify-between shadow-xl items-center z-[99] md:hidden">
 					<a href="#">
 						<div className="flex items-center gap-3 uppercase">
 							<svg
@@ -89,7 +90,7 @@ const Nav = () => {
 								height="2.5em"
 								viewBox="0 0 336 391"
 								xmlns="http://www.w3.org/2000/svg"
-								className="sm:hidden"
+								className="md:hidden"
 							>
 								<path
 									stroke="#fff"
@@ -126,7 +127,7 @@ const Nav = () => {
 					))}
 				</nav>
 			)}
-			<div className="sm:block hidden bg-primary text-primary text-lg shadow-xl">
+			<div className="md:block hidden bg-primary text-primary text-lg shadow-xl">
 				<div className="flex justify-between items-center py-4 px-16">
 					<a href="#">
 						<motion.svg
@@ -134,7 +135,7 @@ const Nav = () => {
 							height="3.5em"
 							viewBox="0 0 336 391"
 							xmlns="http://www.w3.org/2000/svg"
-							className="sm:block hidden pl-3"
+							className="md:block hidden pl-3"
 						>
 							<motion.path
 								variants={pathVariants}
@@ -146,7 +147,7 @@ const Nav = () => {
 						</motion.svg>
 					</a>
 
-					<nav className="sm:block bg-transparent text-primary">
+					<nav className="md:block bg-transparent text-primary">
 						<ul className="px-3 py-1 flex items-center">
 							{pages.map((page, idx) => (
 								<>
