@@ -7,13 +7,13 @@ const Experience = () => {
 	const jobsData = [
 		{
 			company: "Landing",
-			title: "Software Engineer",
+			title: "Junior Software Developer",
 			dates: "Aug 2021 - Dec 2022",
 			desc: [
-				"Implemented API integration to log phone calls into a PostgreSQL database using JavaScript and Rust",
-				"Created React components using Material UI and ES6 features to automate processes for support teams",
-				"Developed Node & Python scripts to pull data for reporting and write data to third-party data platform",
-				"Migrated legacy code being used in CRM into Rust",
+				"Implemented API integration to log phone calls to a PostgreSQL database via REST API calls, using JavaScript and Rust",
+				"Utilized Material UI to create modern, scalable React components to deliver an engaging UI for support teams",
+				"Used knowledge of frontend technologies to create Lightning Web Components (frontend) and OOP to write Apex (backend) with test classes for Salesforce (CRM)",
+				"Migrate models and API integrations from Salesforce to new in-house platform built using Rust",
 			],
 			skills: "JavaScript, React, Rust, Python, PostgreSQL, Git, Node",
 		},
@@ -22,10 +22,12 @@ const Experience = () => {
 			title: "Software Developer Intern",
 			dates: "Jan 2021 - May 2021",
 			desc: [
-				"Designed and developed UI of landing page for a React web-app",
-				"Migrated a multi-page user experience into a single page to enhance user experience and performance",
+				"Designed and developed the UI for a React web-app",
+				"Migrated a multi-page app into a single page to create an engaging UX and increase performance",
+				"Utilized React-Router to enable smooth navigation",
+				"Contributed to the full development cycle, from concept to development",
 				"Utilized GitHub as version control software to track and update code",
-				"Documented codebase for future teams to refer back to",
+				"Documented the codebase for future developers to maintain",
 			],
 			skills: "JavaScript, React, Bootstrap, Git",
 		},
@@ -34,10 +36,10 @@ const Experience = () => {
 			title: "Freelance Developer",
 			dates: "Dec 2020 - Mar 2022",
 			desc: [
-				"Developed static website utilizing Bootstrap and React, as well as HTML, CSS, and JavaScript",
-				"Create relevant UI/UX wireframes and mockups through Figma",
-				"Increased company online engagement by 150% over a 6-month period",
-				"Facilitate bi-weekly meetings with clients to discuss new features or bug fixes",
+				"Designed, developed, and deployed static web pages using Bootstrap and React",
+				"Created and presented modern UI/UX wireframes and mockups using Figma",
+				"Boosted company's web engagement by over 200%",
+				"Conduct bi-weekly meetings with clients to discuss new requests and content updates",
 			],
 			skills: "JavaScript, Bootstrap, Git, HTML, CSS",
 		},
@@ -71,10 +73,7 @@ const Experience = () => {
 
 	return (
 		<div className="section-container">
-			<div className="section-container__heading">
-				<h1 className="heading">02. Experience</h1>
-			</div>
-			<div className="justify-center md:block hidden px-3 py-6 md:pb-24">
+			<div className="justify-center md:block hidden px-3 md:pb-24">
 				<Tabs
 					isFitted
 					isLazy
@@ -125,7 +124,7 @@ const Experience = () => {
 							/>
 						))}
 					</TabList>
-					<TabPanels className="h-72">
+					<TabPanels className="h-fit">
 						{jobsData.map((job, idx) => (
 							<ExperienceTabPanel
 								title={job.title}

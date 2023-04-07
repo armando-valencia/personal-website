@@ -3,12 +3,23 @@ import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 const divVariants = {
-	visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
-	hidden: { opacity: 0, scale: 0 },
+	visible: {
+		opacity: 1,
+		transition: {
+			duration: 1,
+			delay: 0.7,
+		},
+	},
+	hidden: { opacity: 0 },
 };
 
 const homeVariants = {
-	visible: { opacity: 1, transition: { duration: 1.5 } },
+	visible: {
+		opacity: 1,
+		transition: {
+			duration: 1.5,
+		},
+	},
 	hidden: { opacity: 0 },
 };
 
@@ -26,10 +37,9 @@ const SectionContainer = ({ name, component }) => {
 
 	return (
 		<motion.div
-			id={name}
 			className={
 				name == "home"
-					? "h-[85vh] flex items-center text-blue"
+					? "h-[85vh] flex items-center"
 					: "flex items-center justify-center"
 			}
 			ref={ref}

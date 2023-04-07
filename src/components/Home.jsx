@@ -12,8 +12,11 @@ const Home = () => {
 				<span className="text-secondary">Armando Valencia</span>.
 				Welcome to my personal website.
 			</h1>
-			<p className="text-secondary text-xl md:text-2xl">
-				I am a software developer from Birmingham, AL.{" "}
+			<p className="text-xl md:text-2xl">
+				I am a{" "}
+				<span className="text-secondary">software developer</span> from
+				Birmingham, AL that is ambitious to deliver innovative software
+				solutions.{" "}
 			</p>
 		</motion.div>
 	);
