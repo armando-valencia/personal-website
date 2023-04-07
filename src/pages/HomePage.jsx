@@ -6,6 +6,7 @@ import { useEffect } from "react";
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import SectionContainer from "../components/SectionContainer";
+import SectionHeader from "../components/SectionHeader";
 
 const pages = [
 	{ name: "home", component: <Home /> },
@@ -27,12 +28,25 @@ const HomePage = () => {
 	return (
 		<div className="flex items-center justify-center">
 			<div className="flex-none w-8 md:w-14"></div>
-			<div className="grow max-w-3xl space-y-32">
-				{pages.map((page, index) => (
-					<SectionContainer
-						name={page.name}
-						component={page.component}
-					/>
+			<div className="grow max-w-3xl space-y-32 md:space-y-20">
+				{pages.map((page, idx) => (
+					<div
+						id={page.name}
+						className={`${
+							page.name == "home" ? "" : " py-10md:pt-52 my-4"
+						}`}
+					>
+						<SectionHeader
+							key={`SectionHeader-${page.name}-${idx}`}
+							name={page.name}
+							idx={idx}
+						/>
+						<SectionContainer
+							key={`SectionContainer-${page.name}-${idx}`}
+							name={page.name}
+							component={page.component}
+						/>
+					</div>
 				))}
 			</div>
 			<div className="flex-none w-8 md:w-14"></div>
