@@ -7,7 +7,7 @@ const divVariants = {
 		opacity: 1,
 		transition: {
 			duration: 1,
-			delay: 0.7,
+			delay: 0.6,
 		},
 	},
 	hidden: { opacity: 0 },
@@ -17,7 +17,7 @@ const homeVariants = {
 	visible: {
 		opacity: 1,
 		transition: {
-			duration: 1.5,
+			duration: 1,
 		},
 	},
 	hidden: { opacity: 0 },
@@ -30,8 +30,6 @@ const SectionContainer = ({ name, component }) => {
 	useEffect(() => {
 		if (inView) {
 			controls.start("visible");
-		} else {
-			controls.start("hidden");
 		}
 	}, [controls, inView]);
 
@@ -40,7 +38,7 @@ const SectionContainer = ({ name, component }) => {
 			className={
 				name == "home"
 					? "h-[85vh] flex items-center"
-					: "flex items-center justify-center"
+					: "flex items-center justify-center pt-2 md:pt-10"
 			}
 			ref={ref}
 			animate={controls}
