@@ -33,7 +33,7 @@ const HomePage = () => {
 					<div
 						id={page.name}
 						className={`${
-							page.name == "home" ? "" : " py-10md:pt-52 my-4"
+							page.name == "home" ? "" : " py-6 md:pt-52 my-4"
 						}`}
 					>
 						<SectionHeader

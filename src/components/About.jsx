@@ -17,12 +17,14 @@ const About = () => {
 	return (
 		<div className="section-container">
 			<div className="block text-lg md:text-xl">
-				<div className="flex justify-center">
+				<div className="flex justify-center items-center">
+					{/* <div className="items-center h-full"> */}
 					<img
 						src="\picture.jpg"
 						alt="Picture of myself"
-						className="rounded h-44 md:h-60 px-3 p-3 my-4"
+						className="rounded-full h-48 md:h-60 p-3 mt-6 md:mt-0"
 					/>
+					{/* </div> */}
 				</div>
 				<div className="text-quarternary">
 					{/* <p className="px-4 pt-6 pb-4">

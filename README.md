@@ -1,6 +1,6 @@
 # My Personal Website
 
-This is v1 of my personal website. This is a React project built using Vite.
+This is v1 of my personal website. This is a React project built using Vite and hosted on Netlify.
 
 ## **Tools**
 

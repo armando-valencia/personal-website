@@ -25,9 +25,9 @@ const pathVariants = {
 		pathLength: 1,
 		transition: {
 			duration: 1.5,
-			repeat: Infinity,
-			repeatType: "mirror",
-			repeatDelay: 1,
+			// repeat: Infinity,
+			// repeatType: "mirror",
+			// repeatDelay: 1,
 			ease: "easeInOut",
 			delay: 1,
 		},
@@ -60,7 +60,7 @@ const Nav = () => {
 				<div className="p-3 bg-primary flex justify-between items-center z-[99] md:hidden">
 					<a href="#" onClick={handleNav}>
 						<div className="flex items-center gap-3 uppercase">
-							<svg
+							{/* <svg
 								width="2.5em"
 								height="2.5em"
 								viewBox="0 0 336 391"
@@ -73,19 +73,36 @@ const Nav = () => {
 									d="M176 0L336 390.5L272.5 358.5L176 106.5L64.5 358.5L0 390.5L176 0Z"
 									fill="none"
 								/>
-							</svg>
+							</svg> */}
 							<span className="font-semibold text-2xl">
 								Armando Valencia
 							</span>
 						</div>
 					</a>
-					<FiX onClick={handleNav} size={40} />
+					{/* <FiX onClick={handleNav} size={40} /> */}
+					<div onClick={handleNav}>
+						<motion.svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							className="w-8 h-8"
+						>
+							<motion.path
+								variants={pathVariants}
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M6 18L18 6M6 6l12 12"
+							/>
+						</motion.svg>
+					</div>
 				</div>
 			) : (
 				<div className="p-3 bg-primary flex justify-between shadow-xl items-center z-[99] md:hidden">
 					<a href="#">
 						<div className="flex items-center gap-3 uppercase">
-							<svg
+							{/* <svg
 								width="2.5em"
 								height="2.5em"
 								viewBox="0 0 336 391"
@@ -98,14 +115,30 @@ const Nav = () => {
 									d="M176 0L336 390.5L272.5 358.5L176 106.5L64.5 358.5L0 390.5L176 0Z"
 									fill="none"
 								/>
-							</svg>
+							</svg> */}
 							<span className="font-semibold text-2xl">
 								Armando Valencia
 							</span>
 						</div>
 					</a>
 
-					<FiAlignRight onClick={handleNav} size={40} />
+					{/* <FiAlignRight onClick={handleNav} size={40} /> */}
+					<div onClick={handleNav}>
+						<motion.svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							className="w-8 h-8"
+						>
+							<motion.path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+							/>
+						</motion.svg>
+					</div>
 				</div>
 			)}
 

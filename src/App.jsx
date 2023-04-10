@@ -8,7 +8,7 @@ function App() {
 		<div className="text-secondary font-barlow bg-primary/60 md:flex flex-col items-center justify-center">
 			<Nav />
 			<HomePage />
-			<Footer />
+			{/* <Footer /> */}
 		</div>
 	);
 }

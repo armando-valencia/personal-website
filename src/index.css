@@ -5,8 +5,12 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+	background-color: #010b12;
+}
+
 .heading {
-	@apply text-4xl text-secondary capitalize pt-10;
+	@apply text-3xl md:text-4xl text-secondary capitalize pt-10;
 }
 /* TODO: clean up css */
 
@@ -23,7 +27,7 @@
 }
 
 .mobile_nav-icon {
-	@apply absolute top-4 right-4 z-[99] sm:hidden cursor-pointer;
+	@apply sticky top-4 right-4 z-[99] sm:hidden cursor-pointer;
 }
 
 .nav-link {
@@ -31,7 +35,7 @@
 }
 
 .tab-panel__title {
-	@apply text-quarternary text-3xl;
+	@apply text-quarternary text-2xl md:text-3xl;
 }
 
 .tab-panel__dates {
