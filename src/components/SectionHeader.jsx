@@ -25,8 +25,6 @@ const SectionHeader = ({ name, idx }) => {
 	useEffect(() => {
 		if (inView) {
 			controls.start("visible");
-		} else {
-			controls.start("hidden");
 		}
 	}, [controls, inView]);
 
@@ -34,7 +32,7 @@ const SectionHeader = ({ name, idx }) => {
 		<>
 			{name !== "home" && (
 				<>
-					<div className="invisible md:visible">
+					<div className="md:block hidden">
 						<motion.div
 							className="heading"
 							variants={headingVariants}
@@ -45,7 +43,7 @@ const SectionHeader = ({ name, idx }) => {
 							0{idx}. {name}
 						</motion.div>
 					</div>
-					<div className="visible md:invisible">
+					<div className="md:hidden">
 						<div className="heading">
 							0{idx}. {name}
 						</div>
