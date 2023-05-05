@@ -37,13 +37,13 @@ const SectionContainer = ({ name, component }) => {
 		<motion.div
 			className={
 				name == "home"
-					? "h-[85vh] flex items-center"
+					? "h-screen md:h-[85vh] flex items-center"
 					: "flex items-center justify-center pt-2 md:pt-6"
 			}
 			ref={ref}
 			animate={controls}
 			initial="hidden"
-			variants={name == "home" ? homeVariants : divVariants}
+			variants={name == "home" ? homeVariants : ""}
 		>
 			{component}
 		</motion.div>

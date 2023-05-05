@@ -53,72 +53,11 @@ const Nav = () => {
 			variants={containerVariants}
 			initial="hidden"
 			animate="visible"
-			className="sticky top-0 w-full md:w-3/4 z-50 bg-primary text-quarternary"
+			className="sticky top-0 w-full md:w-full z-50 bg-primary/5 text-quarternary drop-shadow-xl"
 			key="nav"
 		>
-			{nav === true ? (
-				<div className="p-3 bg-primary flex justify-between items-center z-[99] md:hidden">
-					<a href="#" onClick={handleNav}>
-						<div className="flex items-center gap-3 uppercase">
-							<span className="font-semibold text-2xl">
-								Armando Valencia
-							</span>
-						</div>
-					</a>
-					<FiX onClick={handleNav} size={40} />
-				</div>
-			) : (
-				<div className="p-3 bg-primary flex justify-between shadow-xl items-center z-[99] md:hidden">
-					<a href="#">
-						<div className="flex items-center gap-3 uppercase">
-							<span className="font-semibold text-2xl">
-								Armando Valencia
-							</span>
-						</div>
-					</a>
-
-					<FiAlignRight onClick={handleNav} size={40} />
-				</div>
-			)}
-
-			{nav && (
-				<nav className="fixed w-full h-screen bg-black/80 flex flex-col justify-center items-center z-20">
-					{pages.map((page, idx) => (
-						<a
-							href={`${
-								page.name == "Home"
-									? "#"
-									: "#" + page.name.toLowerCase()
-							}`}
-							className="w-[75%] flex justify-center items-center rounded-full shadow-md shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200 text-quarternary bg-primary text-xl"
-							onClick={handleNav}
-							key={idx}
-						>
-							{page.icon}&nbsp;{page.name}
-						</a>
-					))}
-				</nav>
-			)}
 			<div className="md:block hidden bg-primary text-primary text-lg shadow-xl">
-				<div className="flex justify-between items-center py-4 px-16">
-					<a href="#">
-						<motion.svg
-							width="3.5em"
-							height="3.5em"
-							viewBox="0 0 336 391"
-							xmlns="http://www.w3.org/2000/svg"
-							className="md:block hidden pl-3"
-						>
-							<motion.path
-								variants={pathVariants}
-								stroke="#FFFFFF"
-								strokeWidth={12}
-								d="M176 0L336 390.5L272.5 358.5L176 106.5L64.5 358.5L0 390.5L176 0Z"
-								fill="none"
-							/>
-						</motion.svg>
-					</a>
-
+				<div className="flex justify-end items-center py-4 px-16">
 					<nav className="md:block bg-transparent text-primary">
 						<ul className="px-3 py-1 flex items-center">
 							{pages.map((page, idx) => (
@@ -130,12 +69,17 @@ const Nav = () => {
 												: "#" + page.name.toLowerCase()
 										}`}
 										className="cursor-pointer hover:text-secondary text-quarternary text-2xl bg-transparent p-5"
-										key={idx}
+										key={page.name + idx + "-nav"}
 									>
 										{page.name}
 									</a>
 									{idx !== pages.length - 1 && (
-										<p className="text-white">&#9830;</p>
+										<p
+											className="text-white"
+											key={page.name + idx + "-nav_pipe"}
+										>
+											|
+										</p>
 									)}
 								</>
 							))}

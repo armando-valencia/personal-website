@@ -18,7 +18,7 @@ const Contact = () => {
 
 	return (
 		<div className="section-container">
-			<div className="md:flex flex-col text-quarternary justify-center items-center text-lg md:text-xl py-3">
+			<div className="md:flex flex-col text-quarternary justify-center items-center text-lg md:text-xl pt-3 pb-3 md:pb-10">
 				<div className="px-4">
 					If you want to connect or give any feedback, please fill out
 					the following form.
