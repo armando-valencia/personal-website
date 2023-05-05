@@ -43,7 +43,7 @@ const SectionHeader = ({ name, idx }) => {
 							0{idx}. {name}
 						</motion.div>
 					</div>
-					<div className="md:hidden">
+					<div className="md:hidden pt-8">
 						<div className="text-2xl md:text-3xl text-secondary capitalize pt-10;">
 							0{idx}. {name}
 						</div>

@@ -15,7 +15,7 @@ const Home = () => {
 			</h1>
 			<p className="text-lg md:text-xl">
 				I'm a <span className="text-secondary">software developer</span>{" "}
-				from Birmingham, AL, currently seeking new opportunities.{" "}
+				from Birmingham, AL.{" "}
 			</p>
 			<div className="flex justify-center px-6 py-4 md:py-8 mt-4 md:mt-8 gap-3 md:gap-4 border-t border-secondary text-secondary w-full">
 				<motion.a
