@@ -3,10 +3,10 @@ import { TabPanel } from "@chakra-ui/tabs";
 const ExperienceTabPanel = ({ title, dates, desc, skills, source }) => {
 	return (
 		<TabPanel className="m-2">
-			<h1 className="tab-panel__title">{title}</h1>
-			<h3 className="tab-panel__dates">{dates}</h3>
+			<h1 className="text-quarternary text-xl md:text-2xl">{title}</h1>
+			<h3 className="text-gray-400 text-lg font-light italic">{dates}</h3>
 
-			<ul className="tab-panel__desc">
+			<ul className="text-secondary text-base md:text-lg list-disc py-1">
 				{desc.map((descItem, idx) => (
 					<li key={idx}>{descItem}</li>
 				))}
@@ -14,8 +14,8 @@ const ExperienceTabPanel = ({ title, dates, desc, skills, source }) => {
 			<div
 				className={`${
 					source == "mobile"
-						? "tab-panel__skills-mobile"
-						: "tab-panel__skills"
+						? "text-quarternary pt-2"
+						: "text-quarternary text-base md:text-lg"
 				}`}
 			>
 				{skills}

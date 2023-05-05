@@ -18,30 +18,27 @@ const About = () => {
 		<div className="section-container">
 			<div className="block text-lg md:text-xl">
 				<div className="flex justify-center items-center">
-					{/* <div className="items-center h-full"> */}
 					<img
 						src="\picture.jpg"
 						alt="Picture of myself"
 						className="rounded-full h-48 md:h-60 p-3 mt-6 md:mt-0"
 					/>
-					{/* </div> */}
 				</div>
 				<div className="text-quarternary">
-					{/* <p className="px-4 pt-6 pb-4">
-						My name is Armando Valencia. I'm a 23 year old software
-						developer who is ambitious to deliver innovative
-						software solutions.
-					</p> */}
-					<p className="px-4 pt-6 pb-4">
-						In 2021, I graduated with my Bachelor's in Management
-						Information Systems. I have always been an enthusiastic
-						student that enjoys learning and solving problems.
-						Struggling through my first semester of programming
-						classes can support that.
+					<p className="px-2 pt-6 pb-4">
+						In 2021, I graduated with my Bachelor's of Science,
+						majoring in Management Information Systems.
 					</p>
-					<p className="px-4 pt-6 pb-4">
-						Some of my hobbies include watching sports, cooking, and
-						going on hikes or walks.
+					<p className="px-2 pt-6 pb-4">
+						My enthusiasm for frontend development stems from my
+						early challenges in my first programming classes, which
+						led me to discover my passion for problem-solving and
+						continuous learning.
+					</p>
+					<p className="px-2 pt-6 pb-4">
+						In my freetime, you'll find me watching sports, trying
+						out a new recipe in the kitchen, or exploring the great
+						outdoors.
 					</p>
 				</div>
 				<div className="flex justify-center mt-4 p-2 text-secondary text-2xl">

@@ -2,9 +2,6 @@ import About from "../components/About";
 import Contact from "../components/Contact";
 import Experience from "../components/Experience";
 import Home from "../components/Home";
-import { useEffect } from "react";
-import { useAnimation, motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
 import SectionContainer from "../components/SectionContainer";
 import SectionHeader from "../components/SectionHeader";
 
@@ -16,25 +13,17 @@ const pages = [
 ];
 
 const HomePage = () => {
-	const controls = useAnimation();
-	const [ref, inView] = useInView();
-
-	useEffect(() => {
-		if (inView) {
-			controls.start("visible");
-		}
-	}, [controls, inView]);
-
 	return (
 		<div className="flex items-center justify-center">
 			<div className="flex-none w-8 md:w-14"></div>
-			<div className="grow max-w-3xl space-y-32 md:space-y-20">
+			<div className="grow max-w-3xl space-y-16 md:space-y-10">
 				{pages.map((page, idx) => (
 					<div
 						id={page.name}
 						className={`${
 							page.name == "home" ? "" : " py-6 md:pt-52 my-4"
 						}`}
+						key={page.name + idx}
 					>
 						<SectionHeader
 							key={`SectionHeader-${page.name}-${idx}`}

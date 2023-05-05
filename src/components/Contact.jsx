@@ -18,7 +18,7 @@ const Contact = () => {
 
 	return (
 		<div className="section-container">
-			<div className="md:flex flex-col text-quarternary justify-center items-center text-xl md:text-2xl py-3">
+			<div className="md:flex flex-col text-quarternary justify-center items-center text-lg md:text-xl pt-3 pb-3 md:pb-10">
 				<div className="px-4">
 					If you want to connect or give any feedback, please fill out
 					the following form.
@@ -36,7 +36,7 @@ const Contact = () => {
 								Name
 							</label>
 							<input
-								className="input-field_contact-form"
+								className="border rounded-lg p-2 flex border-quarternary text-primary bg-quarternary"
 								type="text"
 								name="name"
 								value={name}
@@ -47,7 +47,7 @@ const Contact = () => {
 						<div className="flex flex-col">
 							<label className="text-lg py-2">Email</label>
 							<input
-								className="input-field_contact-form"
+								className="border rounded-lg p-2 flex border-quarternary text-primary bg-quarternary"
 								type="email"
 								name="email"
 								value={email}
@@ -60,7 +60,7 @@ const Contact = () => {
 					<div className="flex flex-col py-2">
 						<label className="text-lg py-2">Subject</label>
 						<input
-							className="input-field_contact-form"
+							className="border rounded-lg p-2 flex border-quarternary text-primary bg-quarternary"
 							type="text"
 							name="subject"
 							value={subject}
@@ -71,7 +71,7 @@ const Contact = () => {
 					<div className="flex flex-col py-2">
 						<label className="text-lg py-2">Message</label>
 						<textarea
-							className="input-field_contact-form"
+							className="border rounded-lg p-2 flex border-quarternary text-primary bg-quarternary"
 							rows="5"
 							name="message"
 							value={message}
