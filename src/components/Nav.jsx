@@ -60,85 +60,24 @@ const Nav = () => {
 				<div className="p-3 bg-primary flex justify-between items-center z-[99] md:hidden">
 					<a href="#" onClick={handleNav}>
 						<div className="flex items-center gap-3 uppercase">
-							{/* <svg
-								width="2.5em"
-								height="2.5em"
-								viewBox="0 0 336 391"
-								xmlns="http://www.w3.org/2000/svg"
-								className="md:hidden"
-							>
-								<path
-									stroke="#fff"
-									strokeWidth={12}
-									d="M176 0L336 390.5L272.5 358.5L176 106.5L64.5 358.5L0 390.5L176 0Z"
-									fill="none"
-								/>
-							</svg> */}
 							<span className="font-semibold text-2xl">
 								Armando Valencia
 							</span>
 						</div>
 					</a>
-					{/* <FiX onClick={handleNav} size={40} /> */}
-					<div onClick={handleNav}>
-						<motion.svg
-							xmlns="http://www.w3.org/2000/svg"
-							fill="none"
-							viewBox="0 0 24 24"
-							stroke-width="1.5"
-							stroke="currentColor"
-							className="w-8 h-8"
-						>
-							<motion.path
-								variants={pathVariants}
-								stroke-linecap="round"
-								stroke-linejoin="round"
-								d="M6 18L18 6M6 6l12 12"
-							/>
-						</motion.svg>
-					</div>
+					<FiX onClick={handleNav} size={40} />
 				</div>
 			) : (
 				<div className="p-3 bg-primary flex justify-between shadow-xl items-center z-[99] md:hidden">
 					<a href="#">
 						<div className="flex items-center gap-3 uppercase">
-							{/* <svg
-								width="2.5em"
-								height="2.5em"
-								viewBox="0 0 336 391"
-								xmlns="http://www.w3.org/2000/svg"
-								className="md:hidden"
-							>
-								<path
-									stroke="#fff"
-									strokeWidth={12}
-									d="M176 0L336 390.5L272.5 358.5L176 106.5L64.5 358.5L0 390.5L176 0Z"
-									fill="none"
-								/>
-							</svg> */}
 							<span className="font-semibold text-2xl">
 								Armando Valencia
 							</span>
 						</div>
 					</a>
 
-					{/* <FiAlignRight onClick={handleNav} size={40} /> */}
-					<div onClick={handleNav}>
-						<motion.svg
-							xmlns="http://www.w3.org/2000/svg"
-							fill="none"
-							viewBox="0 0 24 24"
-							stroke-width="1.5"
-							stroke="currentColor"
-							className="w-8 h-8"
-						>
-							<motion.path
-								stroke-linecap="round"
-								stroke-linejoin="round"
-								d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-							/>
-						</motion.svg>
-					</div>
+					<FiAlignRight onClick={handleNav} size={40} />
 				</div>
 			)}
 
@@ -151,7 +90,7 @@ const Nav = () => {
 									? "#"
 									: "#" + page.name.toLowerCase()
 							}`}
-							className="mobile_nav-link"
+							className="w-[75%] flex justify-center items-center rounded-full shadow-md shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200 text-quarternary bg-primary text-xl"
 							onClick={handleNav}
 							key={idx}
 						>
@@ -190,7 +129,7 @@ const Nav = () => {
 												? "#"
 												: "#" + page.name.toLowerCase()
 										}`}
-										className="nav-link"
+										className="cursor-pointer hover:text-secondary text-quarternary text-2xl bg-transparent p-5"
 										key={idx}
 									>
 										{page.name}

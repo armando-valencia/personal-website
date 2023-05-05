@@ -34,7 +34,7 @@ const SectionHeader = ({ name, idx }) => {
 				<>
 					<div className="md:block hidden">
 						<motion.div
-							className="heading"
+							className="text-2xl md:text-3xl text-secondary capitalize pt-10;"
 							variants={headingVariants}
 							initial="hidden"
 							animate={controls}
@@ -44,7 +44,7 @@ const SectionHeader = ({ name, idx }) => {
 						</motion.div>
 					</div>
 					<div className="md:hidden">
-						<div className="heading">
+						<div className="text-2xl md:text-3xl text-secondary capitalize pt-10;">
 							0{idx}. {name}
 						</div>
 					</div>

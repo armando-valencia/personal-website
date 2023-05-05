@@ -38,7 +38,7 @@ const SectionContainer = ({ name, component }) => {
 			className={
 				name == "home"
 					? "h-[85vh] flex items-center"
-					: "flex items-center justify-center pt-2 md:pt-10"
+					: "flex items-center justify-center pt-2 md:pt-6"
 			}
 			ref={ref}
 			animate={controls}
