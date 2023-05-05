@@ -28,7 +28,7 @@ const HomePage = () => {
 	return (
 		<div className="flex items-center justify-center">
 			<div className="flex-none w-8 md:w-14"></div>
-			<div className="grow max-w-3xl space-y-32 md:space-y-20">
+			<div className="grow max-w-3xl space-y-16 md:space-y-10">
 				{pages.map((page, idx) => (
 					<div
 						id={page.name}
