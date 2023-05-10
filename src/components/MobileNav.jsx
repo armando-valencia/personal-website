@@ -19,7 +19,7 @@ const containerVariant = {
 	visible: {
 		opacity: 1,
 		transition: {
-			staggerChildren: 3,
+			staggerChildren: 1,
 		},
 	},
 };
@@ -32,7 +32,7 @@ const itemsVariant = {
 		y: 0,
 		transition: {
 			type: "spring",
-			duration: 0.5,
+			duration: 1,
 		},
 	},
 };
@@ -54,12 +54,13 @@ const MobileNav = () => {
 			<div className="fixed bottom-5 right-5">
 				<motion.div
 					className="flex flex-col-reverse relative gap-2"
-					variants={containerVariant}
-					initial="hidden"
-					animate="visible"
+					// variants={containerVariant}
+					initial={{ opacity: 0, translateY: 40 }}
+					animate={{ opacity: 1, translateY: 0 }}
+					transition={{ delay: 0.3 }}
 				>
 					<motion.div
-						className="rounded-full focus:scale-105 bg-[#10161c] p-4"
+						className="rounded-full focus:scale-105 bg-[#191f26] border-[#10161c] border p-4"
 						onClick={onMenuClick}
 						variants={itemsVariant}
 						initial="hidden"
@@ -74,7 +75,7 @@ const MobileNav = () => {
 
 					{showMenu && (
 						<>
-							{tabs.map((tab) => (
+							{tabs.map((tab, idx) => (
 								<motion.a
 									href={`${
 										tab.name == "Home"
@@ -82,20 +83,16 @@ const MobileNav = () => {
 											: "#" + tab.name.toLowerCase()
 									}`}
 									key={tab.name}
-									variants={itemsVariant}
-									initial="hidden"
-									animate="visible"
+									initial={{ opacity: 0, translateY: 40 }}
+									animate={{ opacity: 1, translateY: 0 }}
+									transition={{
+										duration: 0.2,
+										delay: idx * 0.1,
+									}}
+									className="rounded-full bg-[#10161c] p-4"
+									onClick={onMenuClick}
 								>
-									<motion.button
-										className="rounded-full bg-[#10161c] p-4 focus:scale-105"
-										onClick={onMenuClick}
-										variants={itemsVariant}
-										initial="hidden"
-										animate="visible"
-										key={tab.name}
-									>
-										{tab.icon}
-									</motion.button>
+									{tab.icon}
 								</motion.a>
 							))}
 						</>
