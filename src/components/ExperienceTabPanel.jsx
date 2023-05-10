@@ -6,7 +6,7 @@ const ExperienceTabPanel = ({ title, dates, desc, skills, source }) => {
 			<h1 className="text-quarternary text-xl md:text-2xl">{title}</h1>
 			<h3 className="text-gray-400 text-lg font-light italic">{dates}</h3>
 
-			<ul className="text-secondary text-base md:text-lg list-disc py-1">
+			<ul className="text-quarternary text-base md:text-lg list-disc py-1">
 				{desc.map((descItem, idx) => (
 					<li key={idx}>{descItem}</li>
 				))}
@@ -14,8 +14,8 @@ const ExperienceTabPanel = ({ title, dates, desc, skills, source }) => {
 			<div
 				className={`${
 					source == "mobile"
-						? "text-quarternary pt-2"
-						: "text-quarternary text-base md:text-lg"
+						? "text-secondary pt-2"
+						: "text-secondary text-base md:text-lg"
 				}`}
 			>
 				{skills}
