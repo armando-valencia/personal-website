@@ -54,7 +54,6 @@ const MobileNav = () => {
 			<div className="fixed bottom-5 right-5">
 				<motion.div
 					className="flex flex-col-reverse relative gap-2"
-					// variants={containerVariant}
 					initial={{ opacity: 0, translateY: 40 }}
 					animate={{ opacity: 1, translateY: 0 }}
 					transition={{ delay: 0.3 }}

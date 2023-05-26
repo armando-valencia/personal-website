@@ -5,7 +5,7 @@ import MobileNav from "./components/MobileNav";
 
 function App() {
 	return (
-		<div className="text-secondary font-barlow bg-primary/50 md:flex flex-col items-center justify-center">
+		<div className="text-secondary font-barlow bg-gradient-to-b from-neutral-900/10 to-gray-800 md:flex flex-col items-center justify-center">
 			<Nav />
 			<HomePage />
 			<MobileNav />
