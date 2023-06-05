@@ -47,7 +47,7 @@ const Nav = () => {
 												? "#"
 												: "#" + page.name.toLowerCase()
 										}`}
-										className="cursor-pointer hover:text-secondary text-quarternary text-2xl bg-transparent p-5"
+										className="cursor-pointer hover:text-secondary text-quarternary text-xl bg-transparent p-5"
 										key={page.name + idx + "-nav"}
 									>
 										{page.name}
