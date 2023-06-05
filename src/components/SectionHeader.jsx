@@ -40,12 +40,12 @@ const SectionHeader = ({ name, idx }) => {
 							animate={controls}
 							ref={ref}
 						>
-							0{idx}. {name}
+							{name}
 						</motion.div>
 					</div>
 					<div className="md:hidden pt-8">
 						<div className="text-2xl md:text-3xl text-secondary capitalize pt-10;">
-							0{idx}. {name}
+							{name}
 						</div>
 					</div>
 				</>
