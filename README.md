@@ -1,4 +1,5 @@
 # My Personal Website
+Welcome to my personal website/portfolio.
 
 Breakdown of the tools used:
 
