@@ -19,15 +19,12 @@ const HomePage = () => (
             {pages.map((page, idx) => (
                 <div
                     id={page.name}
-                    className={`${
-                        page.name == "home" ? "" : " py-6 md:pt-52 my-4"
-                    }`}
+                    className={page.name == "home" ? "" : " py-6 md:pt-20 my-4"}
                     key={page.name + idx}
                 >
                     <SectionHeader
                         key={`SectionHeader-${page.name}-${idx}`}
                         name={page.name}
-                        idx={idx}
                     />
                     <SectionContainer
                         key={`SectionContainer-${page.name}-${idx}`}

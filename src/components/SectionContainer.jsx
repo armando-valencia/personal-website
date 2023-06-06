@@ -21,9 +21,8 @@ const contentVariants = {
         y: 0,
         opacity: 1,
         transition: {
-            delay: 0.2,
-            type: "spring",
-            duration: 1.5,
+            delay: 0.05,
+            duration: 0.5,
         },
     },
 };
