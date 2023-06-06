@@ -7,7 +7,7 @@ const jobsData = [
         title: "Junior Software Developer",
         dates: "Aug 2021 - Dec 2022",
         desc: [
-            "Improved data tracking by implementing by logging data from third-party platforms to a PostgreSQL database",
+            "Improved data tracking by logging data from third-party platforms to a PostgreSQL database",
             "Migrated system using React v16.5 to use v16.13; introduced hooks & functional components to codebase",
             "Developed Python scripts for data fetching, providing written reports for the senior management team",
             "Wrote documentation for new features, navigating through the system, and API integrations",
