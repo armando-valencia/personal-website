@@ -33,7 +33,7 @@ const jobsData = [
         title: "Freelance Web Developer",
         dates: "Dec 2020 - Mar 2022",
         desc: [
-            "Led the development and deployment of responsive, static web pages using Bootstrap and React",
+            "Led the development and deployment of static web pages using Bootstrap and React",
             "Designed UI/UX wireframes for desktop and mobile devices",
             "Improved company's web engagement, boosting website traffic and resulting in new leads",
             "Resolved issues arising from dependency and library updates to maintain optimal website performance",
