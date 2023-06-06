@@ -5,19 +5,19 @@
 @tailwind utilities;
 
 :root {
-	background-color: #010b12;
+    background-color: #010b12;
 }
 
 .section-container {
-	@apply pb-16 md:pb-20;
+    @apply pb-16 md:pb-20;
 }
 
 .mobile_nav-icon {
-	@apply sticky top-4 right-4 z-[99] sm:hidden cursor-pointer;
+    @apply sticky top-4 right-4 z-[99] sm:hidden cursor-pointer;
 }
 
 @layer base {
-	html {
-		font-family: Roboto Condensed, system-ui, sans-serif;
-	}
+    html {
+        font-family: Roboto Condensed, system-ui, sans-serif;
+    }
 }
