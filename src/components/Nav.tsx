@@ -36,7 +36,7 @@ const Nav = () => {
             <div className="flex justify-end items-center py-4 px-16">
                 <motion.nav
                     className="md:block bg-transparent text-primary"
-                    nitial="hidden"
+                    initial="hidden"
                     animate="visible"
                 >
                     <ul className="px-3 py-1 flex items-center">

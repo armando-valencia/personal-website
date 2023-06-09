@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { ReactElement } from "react";
 
 const homeVariants = {
     visible: {
@@ -27,7 +28,12 @@ const contentVariants = {
     },
 };
 
-const SectionContainer = ({ name, component }) => {
+interface Props {
+    name: string;
+    component: ReactElement;
+}
+
+const SectionContainer = ({ name, component }: Props) => {
     const controls = useAnimation();
     const [ref, inView] = useInView();
 

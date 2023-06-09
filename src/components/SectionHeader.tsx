@@ -16,7 +16,11 @@ const headingVariants = {
     },
 };
 
-const SectionHeader = ({ name }) => {
+interface Props {
+    name: string;
+}
+
+const SectionHeader = ({ name }: Props) => {
     const controls = useAnimation();
     const [ref, inView] = useInView();
 
