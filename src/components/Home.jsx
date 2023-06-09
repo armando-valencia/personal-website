@@ -16,7 +16,7 @@ const containerVariant = {
 
 const iconVariant = {
     hidden: {
-        y: -200,
+        y: 200,
     },
     visible: {
         y: 0,
