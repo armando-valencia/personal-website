@@ -1,4 +1,3 @@
-import React from "react";
 import { AiOutlineHome, AiOutlinePhone } from "react-icons/ai";
 import { BsPerson } from "react-icons/bs";
 import { BiBriefcase } from "react-icons/bi";
