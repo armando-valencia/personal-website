@@ -1,4 +1,4 @@
-const skills = [
+const skills: string[] = [
     "React",
     "JavaScript",
     "Node",
@@ -42,9 +42,7 @@ const About = () => (
             </div>
             <div className="grid grid-cols-2 gap-1 justify-items-center list-none text-quarternary">
                 {skills.map((skill, idx) => (
-                    <li key={`${skill}-${idx}`} className="">
-                        {skill}
-                    </li>
+                    <li key={`${skill}-${idx}`}>{skill}</li>
                 ))}
             </div>
         </div>

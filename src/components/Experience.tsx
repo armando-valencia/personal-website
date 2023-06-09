@@ -79,9 +79,9 @@ const Experience = () => (
                 orientation="vertical"
             >
                 <TabList>
-                    {jobsData.map((job) => (
+                    {jobsData.map((job, idx: number) => (
                         <Tab
-                            key={`Tab-${job.company}`}
+                            key={`Tab-${idx}`}
                             _selected={desktopSelectedStyles}
                             _hover={desktopHoverStyles}
                         >
@@ -90,13 +90,12 @@ const Experience = () => (
                     ))}
                 </TabList>
                 <TabPanels className="h-64">
-                    {jobsData.map((job, idx) => (
+                    {jobsData.map((job, idx: number) => (
                         <ExperienceTabPanel
                             title={job.title}
                             dates={job.dates}
                             desc={job.desc}
                             skills={job.skills}
-                            idx={idx}
                             key={`ExperienceTabPanel-${idx}`}
                             source="desktop"
                         />
@@ -124,13 +123,12 @@ const Experience = () => (
                     ))}
                 </TabList>
                 <TabPanels className="h-fit">
-                    {jobsData.map((job, idx) => (
+                    {jobsData.map((job, idx: number) => (
                         <ExperienceTabPanel
                             title={job.title}
                             dates={job.dates}
                             desc={job.desc}
                             skills={job.skills}
-                            idx={idx}
                             key={`ExperienceTabPanel-${idx}`}
                             source="mobile"
                         />
