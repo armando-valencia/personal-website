@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
 
 const Contact = () => {
@@ -72,7 +72,7 @@ const Contact = () => {
                         <label className="text-lg py-2">Message</label>
                         <textarea
                             className="border rounded-lg p-2 flex border-quarternary text-primary bg-quarternary"
-                            rows="5"
+                            rows={5}
                             name="message"
                             value={message}
                             onChange={(e) => setMessage(e.target.value)}
