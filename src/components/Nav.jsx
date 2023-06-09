@@ -1,5 +1,3 @@
-import React, { useState } from "react";
-import { FiAlignRight, FiX } from "react-icons/fi";
 import { AiOutlineHome, AiOutlinePhone } from "react-icons/ai";
 import { BsPerson } from "react-icons/bs";
 import { BiBriefcase } from "react-icons/bi";
@@ -32,29 +30,31 @@ const Nav = () => {
             variants={containerVariants}
             initial="hidden"
             animate="visible"
-            className="sticky top-1 w-full md:w-full z-50 bg-transparent text-quarternary"
+            className="sticky top-1 w-full z-50 bg-transparent text-quarternary"
             key="navbar"
         >
-            <div className="md:block hidden">
-                <div className="flex justify-end items-center py-4 px-16">
-                    <nav className="md:block bg-transparent text-primary">
-                        <ul className="px-3 py-1 flex items-center">
-                            {pages.map((page, idx) => (
-                                <a
-                                    href={`${
-                                        page.name == "Home"
-                                            ? "#"
-                                            : "#" + page.name.toLowerCase()
-                                    }`}
-                                    className="cursor-pointer hover:text-secondary text-quarternary text-xl bg-transparent p-5"
-                                    key={page.name + idx + "-nav"}
-                                >
-                                    {page.name}
-                                </a>
-                            ))}
-                        </ul>
-                    </nav>
-                </div>
+            <div className="flex justify-end items-center py-4 px-16">
+                <motion.nav
+                    className="md:block bg-transparent text-primary"
+                    nitial="hidden"
+                    animate="visible"
+                >
+                    <ul className="px-3 py-1 flex items-center">
+                        {pages.map((page, idx) => (
+                            <a
+                                href={`${
+                                    page.name == "Home"
+                                        ? "#"
+                                        : "#" + page.name.toLowerCase()
+                                }`}
+                                className="cursor-pointer hover:text-secondary text-quarternary text-xl bg-transparent p-5"
+                                key={page.name + idx + "-nav"}
+                            >
+                                {page.name}
+                            </a>
+                        ))}
+                    </ul>
+                </motion.nav>
             </div>
         </motion.div>
     );
