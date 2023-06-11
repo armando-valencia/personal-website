@@ -4,8 +4,14 @@ import { AiOutlineHome, AiOutlinePhone } from "react-icons/ai";
 import { BsPerson } from "react-icons/bs";
 import { motion } from "framer-motion";
 import { BiBriefcase } from "react-icons/bi";
+import { ReactElement } from "react";
 
-const tabs = [
+interface Sections {
+    name: string;
+    icon: ReactElement;
+}
+
+const tabs: Sections[] = [
     { name: "Contact", icon: <AiOutlinePhone size={25} /> },
     { name: "Experience", icon: <BiBriefcase size={25} /> },
     { name: "About", icon: <BsPerson size={25} /> },
@@ -38,10 +44,10 @@ const itemsVariant = {
 };
 
 const MobileNav = () => {
-    const [showMenu, setShowMenu] = useState(false);
+    const [openMenu, setOpenMenu] = useState(false);
 
     const onMenuClick = () => {
-        setShowMenu(!showMenu);
+        setOpenMenu(!openMenu);
     };
 
     return (
@@ -65,14 +71,14 @@ const MobileNav = () => {
                         initial="hidden"
                         animate="visible"
                     >
-                        {!showMenu ? (
+                        {!openMenu ? (
                             <MdOutlineKeyboardArrowUp size={25} />
                         ) : (
                             <MdOutlineClose size={25} />
                         )}
                     </motion.div>
 
-                    {showMenu && (
+                    {openMenu && (
                         <>
                             {tabs.map((tab, idx) => (
                                 <motion.a
@@ -85,7 +91,7 @@ const MobileNav = () => {
                                     initial={{ opacity: 0, translateY: 40 }}
                                     animate={{ opacity: 1, translateY: 0 }}
                                     transition={{
-                                        duration: 0.2,
+                                        duration: 0.15,
                                         delay: idx * 0.1,
                                     }}
                                     className="rounded-full bg-[#10161c] p-4"
