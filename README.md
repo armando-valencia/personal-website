@@ -1,6 +1,6 @@
 # My Personal Website
 
-Breakdown of the tools used:
+Tools used in this project:
 
 -   [React](https://react.dev/) - JavaScript Framework
 -   [Vite](https://vitejs.dev/) - Development Tool
